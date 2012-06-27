@@ -1,0 +1,355 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	.\makefile-dll.mk	/^BIN 	= ls-log.dll$/;"	m	language:Make
+BIN	.\makefile-lib.mk	/^BIN 	= ls-log.lib$/;"	m	language:Make
+CC	.\makefile-dll.mk	/^CC 		= cl -c -nologo$/;"	m	language:Make
+CC	.\makefile-lib.mk	/^CC		= cl -c -nologo$/;"	m	language:Make
+CFLAG	.\makefile-dll.mk	/^CFLAG = -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
+CFLAG	.\makefile-lib.mk	/^CFLAG	= -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
+DEFFILE	.\makefile-dll.mk	/^DEFFILE = ls-log.def$/;"	m	language:Make
+Display_Console	.\inc\ls_log.h	/^  Display_Console   = 0, \/*!< display log information to console window            *\/$/;"	e	language:C++	enum:LS_DisplayType
+Display_Count	.\inc\ls_log.h	/^  Display_Count     = 5, $/;"	e	language:C++	enum:LS_DisplayType
+Display_Database	.\inc\ls_log.h	/^  Display_Database  = 3, \/*!< display log information to databases                 *\/$/;"	e	language:C++	enum:LS_DisplayType
+Display_File	.\inc\ls_log.h	/^  Display_File      = 2, \/*!< display log information to files                     *\/$/;"	e	language:C++	enum:LS_DisplayType
+Display_GUI	.\inc\ls_log.h	/^  Display_GUI       = 1, \/*!< display log information to gui debug window          *\/$/;"	e	language:C++	enum:LS_DisplayType
+Display_Network	.\inc\ls_log.h	/^  Display_Network   = 4, \/*!< display log information to other terminal by network *\/$/;"	e	language:C++	enum:LS_DisplayType
+IMPLIB	.\makefile-dll.mk	/^IMPLIB= ls-log.lib$/;"	m	language:Make
+L	.\src\ls_lock.c	/^  Locker L;$/;"	m	language:C	struct:ls_Lock	file:
+LFLAG	.\makefile-dll.mk	/^LFLAG = -DEBUG -PDB:"ls-log.pdb" -manifest -manifestfile:$(BIN).manifest\\$/;"	m	language:Make
+LIB	.\makefile-lib.mk	/^LIB 	= lib -nologo$/;"	m	language:Make
+LINK	.\makefile-dll.mk	/^LINK	= link -nologo -dll -def:$(DEFFILE)$/;"	m	language:Make
+LS_ARRAYLEN_DEF	.\src\ls_array.c	37;"	d	language:C	file:
+LS_ARRAYLEN_DEF	.\src\ls_log.c	47;"	d	language:C	file:
+LS_BUFFERLEN_DEF	.\inc\ls_common.h	36;"	d	language:C++
+LS_CONFIGFILE	.\src\ls_log.c	46;"	d	language:C	file:
+LS_DisplayType	.\inc\ls_log.h	/^enum LS_DisplayType {$/;"	g	language:C++
+LS_ERROR_LEN	.\inc\ls_common.h	35;"	d	language:C++
+LS_Failed	.\inc\ls_common.h	/^  LS_Failed                     = 1, \/*!< failed                                *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_Failed_CreateModulesArray	.\inc\ls_common.h	/^  LS_Failed_CreateModulesArray  = 5, \/*!< failed - create modules array failed  *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_Failed_CreateSeverityArray	.\inc\ls_common.h	/^  LS_Failed_CreateSeverityArray = 4, \/*!< failed - create severity array failed *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_Failed_CreateWriteLog	.\inc\ls_common.h	/^  LS_Failed_CreateWriteLog      = 6, \/*!< failed - create ls_WriteLog failed    *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_Failed_InvalidParameters	.\inc\ls_common.h	/^  LS_Failed_InvalidParameters   = 2, \/*!< failed - invalid parameters           *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_Failed_LoadConfig	.\inc\ls_common.h	/^  LS_Failed_LoadConfig          = 3, \/*!< failed - load configure failed        *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_MESSAGEBUF	.\src\ls_circularbuffer.h	32;"	d	language:C++
+LS_MODULENAME_LEN	.\src\ls_writebase.h	33;"	d	language:C++
+LS_ResultType	.\inc\ls_common.h	/^enum LS_ResultType {$/;"	g	language:C++
+LS_SEVERITYBUFLEN_DEF	.\src\ls_writelog.h	33;"	d	language:C++
+LS_SeverityType	.\inc\ls_log.h	/^enum LS_SeverityType {$/;"	g	language:C++
+LS_Success	.\inc\ls_common.h	/^  LS_Success                    = 0, \/*!< success                               *\/$/;"	e	language:C++	enum:LS_ResultType
+LS_WRITEFILE_FILE_DEF	.\src\ls_writefile.c	46;"	d	language:C	file:
+LS_WRITELOG_PERCENT	.\src\ls_writelog.c	49;"	d	language:C	file:
+LS_WRITELOG_STEPMIN	.\src\ls_writelog.c	50;"	d	language:C	file:
+LS_WriteLogByTimeType	.\src\ls_writelog.c	/^enum LS_WriteLogByTimeType {$/;"	g	language:C	file:
+LS_WroteLogType	.\src\ls_writelog.c	/^enum LS_WroteLogType {$/;"	g	language:C	file:
+Locker	.\src\ls_lock.c	40;"	d	language:C	file:
+Locker	.\src\ls_lock.c	46;"	d	language:C	file:
+Locker	.\src\ls_lock.c	52;"	d	language:C	file:
+Locker_Init	.\src\ls_lock.c	41;"	d	language:C	file:
+Locker_Init	.\src\ls_lock.c	47;"	d	language:C	file:
+Locker_Init	.\src\ls_lock.c	53;"	d	language:C	file:
+Locker_Off	.\src\ls_lock.c	44;"	d	language:C	file:
+Locker_Off	.\src\ls_lock.c	50;"	d	language:C	file:
+Locker_Off	.\src\ls_lock.c	56;"	d	language:C	file:
+Locker_On	.\src\ls_lock.c	43;"	d	language:C	file:
+Locker_On	.\src\ls_lock.c	49;"	d	language:C	file:
+Locker_On	.\src\ls_lock.c	55;"	d	language:C	file:
+Locker_Uninit	.\src\ls_lock.c	42;"	d	language:C	file:
+Locker_Uninit	.\src\ls_lock.c	48;"	d	language:C	file:
+Locker_Uninit	.\src\ls_lock.c	54;"	d	language:C	file:
+MT	.\makefile-dll.mk	/^MT 		= mt -nologo$/;"	m	language:Make
+OBJS	.\makefile-dll.mk	/^OBJS	= ls_array.obj ls_buffer.obj ls_circularbuffer.obj ls_ini.obj\\$/;"	m	language:Make
+OBJS	.\makefile-lib.mk	/^OBJS 	= ls_array.obj ls_buffer.obj ls_circularbuffer.obj ls_ini.obj\\$/;"	m	language:Make
+RC	.\makefile-dll.mk	/^RC 		= rc$/;"	m	language:Make
+RES	.\makefile-dll.mk	/^RES 	= ls-log.res$/;"	m	language:Make
+RM	.\makefile-dll.mk	/^RM 		= rm$/;"	m	language:Make
+RM	.\makefile-lib.mk	/^RM 		= rm$/;"	m	language:Make
+SRCS	.\makefile-dll.mk	/^SRCS 	= .\/src\/ls_array.c .\/src\/ls_buffer.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
+SRCS	.\makefile-lib.mk	/^SRCS	= .\/src\/ls_array.c .\/src\/ls_buffer.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
+Severity_Count	.\inc\ls_log.h	/^  Severity_Count    = 4, $/;"	e	language:C++	enum:LS_SeverityType
+Severity_Debug	.\inc\ls_log.h	/^  Severity_Debug    = 0, \/*!< debug informations   *\/$/;"	e	language:C++	enum:LS_SeverityType
+Severity_Error	.\inc\ls_log.h	/^  Severity_Error    = 3, \/*!< error informations   *\/$/;"	e	language:C++	enum:LS_SeverityType
+Severity_Message	.\inc\ls_log.h	/^  Severity_Message  = 1, \/*!< normal messages      *\/$/;"	e	language:C++	enum:LS_SeverityType
+Severity_Warning	.\inc\ls_log.h	/^  Severity_Warning  = 2, \/*!< warning informations *\/$/;"	e	language:C++	enum:LS_SeverityType
+TransCircularBuffer	.\test\ls_test_circularbuffer.c	/^typedef struct TransCircularBuffer {$/;"	s	language:C	file:
+TransCircularBuffer	.\test\ls_test_circularbuffer.c	/^} TransCircularBuffer;$/;"	t	language:C	typeref:struct:TransCircularBuffer	file:
+TransNoLock	.\test\ls_test_buffer.c	/^typedef struct TransNoLock {$/;"	s	language:C	file:
+TransNoLock	.\test\ls_test_buffer.c	/^} TransNoLock;$/;"	t	language:C	typeref:struct:TransNoLock	file:
+TransWithLock	.\test\ls_test_buffer.c	/^typedef struct TransWithLock {$/;"	s	language:C	file:
+TransWithLock	.\test\ls_test_buffer.c	/^} TransWithLock;$/;"	t	language:C	typeref:struct:TransWithLock	file:
+UM_DEMO	.\demo\main.c	37;"	d	language:C	file:
+UNUSED_PARAM	.\inc\ls_common.h	32;"	d	language:C++
+WriteLogByTime_No	.\src\ls_writelog.c	/^  WriteLogByTime_No   = 0, \/*!< NO  *\/$/;"	e	language:C	enum:LS_WriteLogByTimeType	file:
+WriteLogByTime_Yes	.\src\ls_writelog.c	/^  WriteLogByTime_Yes  = 1, \/*!< YES *\/$/;"	e	language:C	enum:LS_WriteLogByTimeType	file:
+WroteLog_No	.\src\ls_writelog.c	/^  WroteLog_No   = 0, \/*!< NO  *\/$/;"	e	language:C	enum:LS_WroteLogType	file:
+WroteLog_Yes	.\src\ls_writelog.c	/^  WroteLog_Yes  = 1, \/*!< YES *\/$/;"	e	language:C	enum:LS_WroteLogType	file:
+_APS_NEXT_COMMAND_VALUE	.\res\resource.h	4;"	d	language:C++
+_APS_NEXT_CONTROL_VALUE	.\res\resource.h	5;"	d	language:C++
+_APS_NEXT_RESOURCE_VALUE	.\res\resource.h	3;"	d	language:C++
+_APS_NEXT_SYMED_VALUE	.\res\resource.h	6;"	d	language:C++
+__LS_ARRAY_HEADER_H__	.\src\ls_array.h	30;"	d	language:C++
+__LS_BUFFER_HEADER_H__	.\src\ls_buffer.h	30;"	d	language:C++
+__LS_CIRCULARBUFFER_HEADER_H__	.\src\ls_circularbuffer.h	30;"	d	language:C++
+__LS_COMMON_HEADER_H__	.\inc\ls_common.h	30;"	d	language:C++
+__LS_INI_HEADER_H__	.\src\ls_ini.h	30;"	d	language:C++
+__LS_LOCK_HEADER_H__	.\src\ls_lock.h	30;"	d	language:C++
+__LS_LOG_HEADER_H__	.\inc\ls_log.h	30;"	d	language:C++
+__LS_TEST_HEADER_H__	.\test\ls_test.h	30;"	d	language:C++
+__LS_TIME_HEADER_H__	.\src\ls_time.h	30;"	d	language:C++
+__LS_WRITEBASE_HEADER_H__	.\src\ls_writebase.h	30;"	d	language:C++
+__LS_WRITELOG_HEADER_H__	.\src\ls_writelog.h	30;"	d	language:C++
+__elem_visitor	.\test\ls_test_array.c	/^static void __elem_visitor(void* p, void* arg)$/;"	f	language:C	file:	signature:(void* p, void* arg)
+__innerThread	.\test\ls_test_circularbuffer.c	/^static UINT WINAPI __innerThread(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+__innerThreadNoLock	.\test\ls_test_buffer.c	/^static UINT WINAPI __innerThreadNoLock(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+__innerThreadWithLock	.\test\ls_test_buffer.c	/^static UINT WINAPI __innerThreadWithLock(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+__inner_help	.\test\ls_test_buffer.c	/^static void __inner_help(void)$/;"	f	language:C	file:	signature:(void)
+__inner_mtNoLock	.\test\ls_test_buffer.c	/^static void __inner_mtNoLock(struct ls_Buffer* lbuffer)$/;"	f	language:C	file:	signature:(struct ls_Buffer* lbuffer)
+__inner_mtWithLock	.\test\ls_test_buffer.c	/^static void __inner_mtWithLock(struct ls_Buffer* lbuffer)$/;"	f	language:C	file:	signature:(struct ls_Buffer* lbuffer)
+__inner_single	.\test\ls_test_buffer.c	/^static void __inner_single(struct ls_Buffer* lbuffer)$/;"	f	language:C	file:	signature:(struct ls_Buffer* lbuffer)
+__inner_testFuncstions	.\test\ls_test_buffer.c	/^static void __inner_testFuncstions(struct ls_Buffer* lbuffer)$/;"	f	language:C	file:	signature:(struct ls_Buffer* lbuffer)
+__log_snprintf	.\src\ls_log.c	/^static int __log_snprintf(char* dest, size_t count, const char* fmt, ...)$/;"	f	language:C	file:	signature:(char* dest, size_t count, const char* fmt, ...)
+__log_vsnprintf	.\src\ls_log.c	/^static int __log_vsnprintf(char* dest, size_t count, const char* fmt, va_list ap)$/;"	f	language:C	file:	signature:(char* dest, size_t count, const char* fmt, va_list ap)
+__ls_access	.\src\ls_writefile.c	/^static int __ls_access(const char* path, int mode)$/;"	f	language:C	file:	signature:(const char* path, int mode)
+__ls_mkdir	.\src\ls_writefile.c	/^static int __ls_mkdir(const char* path)$/;"	f	language:C	file:	signature:(const char* path)
+__releaseElement	.\src\ls_log.c	/^static void __releaseElement(void* elem, void* arg)$/;"	f	language:C	file:	signature:(void* elem, void* arg)
+__vistor_circularBuffer	.\test\ls_test_circularbuffer.c	/^void __vistor_circularBuffer(struct ls_LogBuffer* buffer, void* arg)$/;"	f	language:C	signature:(struct ls_LogBuffer* buffer, void* arg)
+begin	.\src\ls_array.c	/^  void** begin;     \/*!< begin address     *\/$/;"	m	language:C	struct:ls_Array	file:
+bufLen	.\src\ls_buffer.c	/^  int   bufLen;     \/*!< buffer空间大小 *\/$/;"	m	language:C	struct:ls_Buffer	file:
+buffer	.\src\ls_buffer.c	/^  char* buffer;     \/*!< 存储的数据空间 *\/$/;"	m	language:C	struct:ls_Buffer	file:
+buffer	.\src\ls_writebase.h	/^  struct ls_CircularBuffer* buffer; \/*!< circular buffer of severity buffer *\/$/;"	m	language:C++	struct:ls_SeverityBuffer	typeref:struct:ls_SeverityBuffer::ls_CircularBuffer
+countof	.\inc\ls_common.h	33;"	d	language:C++
+dataLen	.\src\ls_buffer.c	/^  int   dataLen;    \/*!< 数据空间的大小 *\/$/;"	m	language:C	struct:ls_Buffer	file:
+day	.\src\ls_time.h	/^  unsigned char  day;$/;"	m	language:C++	struct:ls_LogTime
+displayType	.\src\ls_circularbuffer.h	/^  unsigned char  displayType;   \/*!< display module - see enum LS_DisplayType   *\/$/;"	m	language:C++	struct:ls_LogBuffer
+elements	.\src\ls_array.c	/^  void** elements;  \/*!< elements of Array *\/$/;"	m	language:C	struct:ls_Array	file:
+end	.\src\ls_array.c	/^  void** end;       \/*!< end address       *\/$/;"	m	language:C	struct:ls_Array	file:
+exitEvent	.\src\ls_writelog.c	/^  HANDLE                exitEvent;                    \/*!< 结束线程的时候结束事件对象句柄           *\/$/;"	m	language:C	struct:ls_WriteLog	file:
+exit_ev	.\test\ls_test_buffer.c	/^  HANDLE            exit_ev;$/;"	m	language:C	struct:TransNoLock	file:
+exit_ev	.\test\ls_test_buffer.c	/^  HANDLE            exit_ev;$/;"	m	language:C	struct:TransWithLock	file:
+exit_ev	.\test\ls_test_circularbuffer.c	/^  HANDLE exit_ev;$/;"	m	language:C	struct:TransCircularBuffer	file:
+file	.\src\ls_ini.c	/^  char file[_MAX_PATH]; \/*!< ini filename *\/$/;"	m	language:C	struct:ls_Ini	file:
+freeLen	.\src\ls_buffer.c	/^  int   freeLen;    \/*!< 空闲空间的大小 *\/$/;"	m	language:C	struct:ls_Buffer	file:
+g_sLog	.\src\ls_log.c	/^static struct ls_Log* g_sLog = NULL;$/;"	v	language:C	typeref:struct:ls_Log	file:
+g_sNum1	.\test\ls_test_lock.c	/^static int g_sNum1 = 0;$/;"	v	language:C	file:
+g_sNum2	.\test\ls_test_lock.c	/^static int g_sNum2 = 0;$/;"	v	language:C	file:
+getCommand	.\demo\main.c	/^static int getCommand(char* cmd)$/;"	f	language:C	file:	signature:(char* cmd)
+getData	.\demo\main.c	/^static void getData(int size, short* data)$/;"	f	language:C	file:	signature:(int size, short* data)
+getDataBuffer	.\test\ls_test_buffer.c	/^static void getDataBuffer(int count, short* data)$/;"	f	language:C	file:	signature:(int count, short* data)
+getLogBuffer	.\test\ls_test_circularbuffer.c	/^static void getLogBuffer(struct ls_LogBuffer* llbuf)$/;"	f	language:C	file:	signature:(struct ls_LogBuffer* llbuf)
+help	.\demo\main.c	/^static void help(void)$/;"	f	language:C	file:	signature:(void)
+hour	.\src\ls_time.h	/^  unsigned char  hour;$/;"	m	language:C++	struct:ls_LogTime
+id	.\src\ls_writebase.h	/^  int                       id;     \/*!< id of severity buffer              *\/$/;"	m	language:C++	struct:ls_SeverityBuffer
+id	.\src\ls_writebase.h	/^  int   id;                       \/*!< id of module   *\/$/;"	m	language:C++	struct:ls_Module
+init	.\src\ls_writebase.h	/^  void (*init)(struct ls_WriteBase*, struct ls_Array* logModules);$/;"	m	language:C++	struct:ls_WriteBase
+init	.\src\ls_writefile.c	/^  void (*init)(struct ls_WriteBase*, struct ls_Array* logModules);$/;"	m	language:C	struct:ls_WriteFile	file:
+lbuffer	.\src\ls_circularbuffer.c	/^  struct ls_Buffer* lbuffer;  \/*!< 内存缓冲区   *\/$/;"	m	language:C	struct:ls_CircularBuffer	typeref:struct:ls_CircularBuffer::ls_Buffer	file:
+lbuffer	.\test\ls_test_buffer.c	/^  struct ls_Buffer* lbuffer;$/;"	m	language:C	struct:TransNoLock	typeref:struct:TransNoLock::ls_Buffer	file:
+lbuffer	.\test\ls_test_buffer.c	/^  struct ls_Buffer* lbuffer;$/;"	m	language:C	struct:TransWithLock	typeref:struct:TransWithLock::ls_Buffer	file:
+lcbuffer	.\test\ls_test_circularbuffer.c	/^  struct ls_CircularBuffer* lcbuffer;$/;"	m	language:C	struct:TransCircularBuffer	typeref:struct:TransCircularBuffer::ls_CircularBuffer	file:
+level	.\src\ls_circularbuffer.h	/^  unsigned char  level;         \/*!< severity level - see enum LS_SeverityType  *\/$/;"	m	language:C++	struct:ls_LogBuffer
+llock	.\src\ls_circularbuffer.c	/^  struct ls_Lock*   llock;    \/*!< 多线程操作锁 *\/$/;"	m	language:C	struct:ls_CircularBuffer	typeref:struct:ls_CircularBuffer::ls_Lock	file:
+llock	.\test\ls_test_buffer.c	/^  struct ls_Lock*   llock;$/;"	m	language:C	struct:TransWithLock	typeref:struct:TransWithLock::ls_Lock	file:
+logModules	.\src\ls_log.c	/^  struct ls_Array*    logModules;        \/*!< array of ls_Module         *\/$/;"	m	language:C	struct:ls_Log	typeref:struct:ls_Log::ls_Array	file:
+logModules	.\src\ls_writelog.c	/^  struct ls_Array*      logModules;                   \/*!< log module circular buffers array object *\/$/;"	m	language:C	struct:ls_WriteLog	typeref:struct:ls_WriteLog::ls_Array	file:
+ls_Array	.\src\ls_array.c	/^struct ls_Array {$/;"	s	language:C	file:
+ls_Buffer	.\src\ls_buffer.c	/^struct ls_Buffer {$/;"	s	language:C	file:
+ls_CircularBuffer	.\src\ls_circularbuffer.c	/^struct ls_CircularBuffer {$/;"	s	language:C	file:
+ls_Ini	.\src\ls_ini.c	/^struct ls_Ini {$/;"	s	language:C	file:
+ls_Lock	.\src\ls_lock.c	/^struct ls_Lock {$/;"	s	language:C	file:
+ls_Log	.\src\ls_log.c	/^struct ls_Log {$/;"	s	language:C	file:
+ls_LogBuffer	.\src\ls_circularbuffer.h	/^struct ls_LogBuffer {$/;"	s	language:C++
+ls_LogTime	.\src\ls_time.h	/^struct ls_LogTime {$/;"	s	language:C++
+ls_Module	.\src\ls_writebase.h	/^struct ls_Module {$/;"	s	language:C++
+ls_ModuleStreams	.\src\ls_writefile.c	/^struct ls_ModuleStreams {$/;"	s	language:C	file:
+ls_SeverityBuffer	.\src\ls_writebase.h	/^struct ls_SeverityBuffer {$/;"	s	language:C++
+ls_WriteBase	.\src\ls_writebase.h	/^struct ls_WriteBase {$/;"	s	language:C++
+ls_WriteDef	.\src\ls_writedef.c	36;"	d	language:C	file:
+ls_WriteFile	.\src\ls_writefile.c	/^struct ls_WriteFile {$/;"	s	language:C	file:
+ls_WriteGui	.\src\ls_writegui.c	41;"	d	language:C	file:
+ls_WriteLog	.\src\ls_writelog.c	/^struct ls_WriteLog {$/;"	s	language:C	file:
+ls_arrayClear	.\src\ls_array.c	/^void ls_arrayClear(struct ls_Array* self)$/;"	f	language:C	signature:(struct ls_Array* self)
+ls_arrayClear	.\src\ls_array.h	/^extern void ls_arrayClear(struct ls_Array* self);$/;"	p	language:C++	signature:(struct ls_Array* self)
+ls_arrayCreate	.\src\ls_array.c	/^struct ls_Array* ls_arrayCreate(int storage)$/;"	f	language:C	signature:(int storage)
+ls_arrayCreate	.\src\ls_array.h	/^extern struct ls_Array* ls_arrayCreate(int size);$/;"	p	language:C++	signature:(int size)
+ls_arrayErase	.\src\ls_array.c	/^void* ls_arrayErase(struct ls_Array* self, int index)$/;"	f	language:C	signature:(struct ls_Array* self, int index)
+ls_arrayErase	.\src\ls_array.h	/^extern void* ls_arrayErase(struct ls_Array* self, int index);$/;"	p	language:C++	signature:(struct ls_Array* self, int index)
+ls_arrayForeach	.\src\ls_array.c	/^int ls_arrayForeach(struct ls_Array* self, void (*visitor)(void*, void*), void* arg)$/;"	f	language:C	signature:(struct ls_Array* self, void (*visitor)(void*, void*), void* arg)
+ls_arrayForeach	.\src\ls_array.h	/^extern int ls_arrayForeach(struct ls_Array* self, void (*visitor)(void*, void*), void* arg);$/;"	p	language:C++	signature:(struct ls_Array* self, void (*visitor)(void*, void*), void* arg)
+ls_arrayGet	.\src\ls_array.c	/^void* ls_arrayGet(struct ls_Array* self, int index)$/;"	f	language:C	signature:(struct ls_Array* self, int index)
+ls_arrayGet	.\src\ls_array.h	/^extern void* ls_arrayGet(struct ls_Array* self, int index);$/;"	p	language:C++	signature:(struct ls_Array* self, int index)
+ls_arrayGrow	.\src\ls_array.c	/^static int ls_arrayGrow(struct ls_Array* self)$/;"	f	language:C	file:	signature:(struct ls_Array* self)
+ls_arrayInsert	.\src\ls_array.c	/^int ls_arrayInsert(struct ls_Array* self, void* data)$/;"	f	language:C	signature:(struct ls_Array* self, void* data)
+ls_arrayInsert	.\src\ls_array.h	/^extern int ls_arrayInsert(struct ls_Array* self, void* x);$/;"	p	language:C++	signature:(struct ls_Array* self, void* x)
+ls_arrayRelease	.\src\ls_array.c	/^void ls_arrayRelease(struct ls_Array** self)$/;"	f	language:C	signature:(struct ls_Array** self)
+ls_arrayRelease	.\src\ls_array.h	/^extern void ls_arrayRelease(struct ls_Array** self);$/;"	p	language:C++	signature:(struct ls_Array** self)
+ls_arraySet	.\src\ls_array.c	/^void ls_arraySet(struct ls_Array* self, int index, void* data)$/;"	f	language:C	signature:(struct ls_Array* self, int index, void* data)
+ls_arraySet	.\src\ls_array.h	/^extern void ls_arraySet(struct ls_Array* self, int index, void* x);$/;"	p	language:C++	signature:(struct ls_Array* self, int index, void* x)
+ls_arraySize	.\src\ls_array.c	/^int ls_arraySize(struct ls_Array* self)$/;"	f	language:C	signature:(struct ls_Array* self)
+ls_arraySize	.\src\ls_array.h	/^extern int ls_arraySize(struct ls_Array* self);$/;"	p	language:C++	signature:(struct ls_Array* self)
+ls_bufferClear	.\src\ls_buffer.c	/^void ls_bufferClear(struct ls_Buffer* self)$/;"	f	language:C	signature:(struct ls_Buffer* self)
+ls_bufferClear	.\src\ls_buffer.h	/^extern void ls_bufferClear(struct ls_Buffer* self);$/;"	p	language:C++	signature:(struct ls_Buffer* self)
+ls_bufferCreate	.\src\ls_buffer.c	/^struct ls_Buffer* ls_bufferCreate(int bufLen)$/;"	f	language:C	signature:(int bufLen)
+ls_bufferCreate	.\src\ls_buffer.h	/^extern struct ls_Buffer* ls_bufferCreate(int bufLen);$/;"	p	language:C++	signature:(int bufLen)
+ls_bufferDataLength	.\src\ls_buffer.c	/^int ls_bufferDataLength(struct ls_Buffer* self)$/;"	f	language:C	signature:(struct ls_Buffer* self)
+ls_bufferDataLength	.\src\ls_buffer.h	/^extern int ls_bufferDataLength(struct ls_Buffer* self);$/;"	p	language:C++	signature:(struct ls_Buffer* self)
+ls_bufferFreeLength	.\src\ls_buffer.c	/^int ls_bufferFreeLength(struct ls_Buffer* self)$/;"	f	language:C	signature:(struct ls_Buffer* self)
+ls_bufferFreeLength	.\src\ls_buffer.h	/^extern int ls_bufferFreeLength(struct ls_Buffer* self);$/;"	p	language:C++	signature:(struct ls_Buffer* self)
+ls_bufferRead	.\src\ls_buffer.c	/^int ls_bufferRead(struct ls_Buffer* self, int outLen, void* outBuf)$/;"	f	language:C	signature:(struct ls_Buffer* self, int outLen, void* outBuf)
+ls_bufferRead	.\src\ls_buffer.h	/^extern int ls_bufferRead(struct ls_Buffer* self, int outLen, void* outBuf);$/;"	p	language:C++	signature:(struct ls_Buffer* self, int outLen, void* outBuf)
+ls_bufferRelease	.\src\ls_buffer.c	/^void ls_bufferRelease(struct ls_Buffer** self)$/;"	f	language:C	signature:(struct ls_Buffer** self)
+ls_bufferRelease	.\src\ls_buffer.h	/^extern void ls_bufferRelease(struct ls_Buffer** self);$/;"	p	language:C++	signature:(struct ls_Buffer** self)
+ls_bufferRemove	.\src\ls_buffer.c	/^int ls_bufferRemove(struct ls_Buffer* self, int len)$/;"	f	language:C	signature:(struct ls_Buffer* self, int len)
+ls_bufferRemove	.\src\ls_buffer.h	/^extern int ls_bufferRemove(struct ls_Buffer* self, int len);$/;"	p	language:C++	signature:(struct ls_Buffer* self, int len)
+ls_bufferSize	.\src\ls_buffer.c	/^int ls_bufferSize(struct ls_Buffer* self)$/;"	f	language:C	signature:(struct ls_Buffer* self)
+ls_bufferSize	.\src\ls_buffer.h	/^extern int ls_bufferSize(struct ls_Buffer* self);$/;"	p	language:C++	signature:(struct ls_Buffer* self)
+ls_bufferWrite	.\src\ls_buffer.c	/^int ls_bufferWrite(struct ls_Buffer* self, const void* inBuf, int inLen)$/;"	f	language:C	signature:(struct ls_Buffer* self, const void* inBuf, int inLen)
+ls_bufferWrite	.\src\ls_buffer.h	/^extern int ls_bufferWrite(struct ls_Buffer* self, const void* inBuf, int inLen);$/;"	p	language:C++	signature:(struct ls_Buffer* self, const void* inBuf, int inLen)
+ls_circularBufferClear	.\src\ls_circularbuffer.c	/^void ls_circularBufferClear(struct ls_CircularBuffer* self)$/;"	f	language:C	signature:(struct ls_CircularBuffer* self)
+ls_circularBufferClear	.\src\ls_circularbuffer.h	/^extern void ls_circularBufferClear(struct ls_CircularBuffer* self);$/;"	p	language:C++	signature:(struct ls_CircularBuffer* self)
+ls_circularBufferCreate	.\src\ls_circularbuffer.c	/^struct ls_CircularBuffer* ls_circularBufferCreate(int bufLen)$/;"	f	language:C	signature:(int bufLen)
+ls_circularBufferCreate	.\src\ls_circularbuffer.h	/^extern struct ls_CircularBuffer* ls_circularBufferCreate(int bufLen);$/;"	p	language:C++	signature:(int bufLen)
+ls_circularBufferDataLength	.\src\ls_circularbuffer.c	/^int ls_circularBufferDataLength(struct ls_CircularBuffer* self)$/;"	f	language:C	signature:(struct ls_CircularBuffer* self)
+ls_circularBufferDataLength	.\src\ls_circularbuffer.h	/^extern int ls_circularBufferDataLength(struct ls_CircularBuffer* self);$/;"	p	language:C++	signature:(struct ls_CircularBuffer* self)
+ls_circularBufferPop	.\src\ls_circularbuffer.c	/^int ls_circularBufferPop(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer)$/;"	f	language:C	signature:(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer)
+ls_circularBufferPop	.\src\ls_circularbuffer.h	/^extern int ls_circularBufferPop(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer);$/;"	p	language:C++	signature:(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer)
+ls_circularBufferPopForeach	.\src\ls_circularbuffer.c	/^int ls_circularBufferPopForeach(struct ls_CircularBuffer* self, void (*vistor)(struct ls_LogBuffer*, void*), void* arg)$/;"	f	language:C	signature:(struct ls_CircularBuffer* self, void (*vistor)(struct ls_LogBuffer*, void*), void* arg)
+ls_circularBufferPopForeach	.\src\ls_circularbuffer.h	/^extern int ls_circularBufferPopForeach(struct ls_CircularBuffer* self, void (*vistor)(struct ls_LogBuffer*, void*), void* arg);$/;"	p	language:C++	signature:(struct ls_CircularBuffer* self, void (*vistor)(struct ls_LogBuffer*, void*), void* arg)
+ls_circularBufferPush	.\src\ls_circularbuffer.c	/^int ls_circularBufferPush(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer)$/;"	f	language:C	signature:(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer)
+ls_circularBufferPush	.\src\ls_circularbuffer.h	/^extern int ls_circularBufferPush(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer);$/;"	p	language:C++	signature:(struct ls_CircularBuffer* self, struct ls_LogBuffer* buffer)
+ls_circularBufferRelease	.\src\ls_circularbuffer.c	/^void ls_circularBufferRelease(struct ls_CircularBuffer** self)$/;"	f	language:C	signature:(struct ls_CircularBuffer** self)
+ls_circularBufferRelease	.\src\ls_circularbuffer.h	/^extern void ls_circularBufferRelease(struct ls_CircularBuffer** self);$/;"	p	language:C++	signature:(struct ls_CircularBuffer** self)
+ls_getConfigFile	.\src\ls_log.c	/^static void ls_getConfigFile(char* outFileName)$/;"	f	language:C	file:	signature:(char* outFileName)
+ls_getLogTime	.\src\ls_time.c	/^int ls_getLogTime(struct ls_LogTime* t)$/;"	f	language:C	signature:(struct ls_LogTime* t)
+ls_getLogTime	.\src\ls_time.h	/^extern int ls_getLogTime(struct ls_LogTime* t);   \/*!< get current log time *\/$/;"	p	language:C++	signature:(struct ls_LogTime* t)
+ls_iniClose	.\src\ls_ini.c	/^void ls_iniClose(struct ls_Ini** self)$/;"	f	language:C	signature:(struct ls_Ini** self)
+ls_iniClose	.\src\ls_ini.h	/^extern void ls_iniClose(struct ls_Ini** self);$/;"	p	language:C++	signature:(struct ls_Ini** self)
+ls_iniGetInt	.\src\ls_ini.c	/^int ls_iniGetInt(struct ls_Ini* self, char* app, char* key, int* outValue)$/;"	f	language:C	signature:(struct ls_Ini* self, char* app, char* key, int* outValue)
+ls_iniGetInt	.\src\ls_ini.h	/^extern int ls_iniGetInt(struct ls_Ini* self, char* app, char* key, int* outValue);$/;"	p	language:C++	signature:(struct ls_Ini* self, char* app, char* key, int* outValue)
+ls_iniGetStr	.\src\ls_ini.c	/^int ls_iniGetStr(struct ls_Ini* self, char* app, char* key, int outLen, char* outValue)$/;"	f	language:C	signature:(struct ls_Ini* self, char* app, char* key, int outLen, char* outValue)
+ls_iniGetStr	.\src\ls_ini.h	/^extern int ls_iniGetStr(struct ls_Ini* self, char* app, char* key, int outLen, char* outValue);$/;"	p	language:C++	signature:(struct ls_Ini* self, char* app, char* key, int outLen, char* outValue)
+ls_iniOpen	.\src\ls_ini.c	/^struct ls_Ini* ls_iniOpen(const char* file)$/;"	f	language:C	signature:(const char* file)
+ls_iniOpen	.\src\ls_ini.h	/^extern struct ls_Ini* ls_iniOpen(const char* file);$/;"	p	language:C++	signature:(const char* file)
+ls_init	.\inc\ls_log.h	/^extern int ls_init(void);     \/*!< initiliaze logging system   *\/$/;"	p	language:C++	signature:(void)
+ls_init	.\src\ls_log.c	/^int ls_init(void)$/;"	f	language:C	signature:(void)
+ls_lockCreate	.\src\ls_lock.c	/^struct ls_Lock* ls_lockCreate(void)$/;"	f	language:C	signature:(void)
+ls_lockCreate	.\src\ls_lock.h	/^extern struct ls_Lock* ls_lockCreate(void);$/;"	p	language:C++	signature:(void)
+ls_lockOff	.\src\ls_lock.c	/^void ls_lockOff(struct ls_Lock* self)$/;"	f	language:C	signature:(struct ls_Lock* self)
+ls_lockOff	.\src\ls_lock.h	/^extern void ls_lockOff(struct ls_Lock* self);$/;"	p	language:C++	signature:(struct ls_Lock* self)
+ls_lockOn	.\src\ls_lock.c	/^void ls_lockOn(struct ls_Lock* self)$/;"	f	language:C	signature:(struct ls_Lock* self)
+ls_lockOn	.\src\ls_lock.h	/^extern void ls_lockOn(struct ls_Lock* self);$/;"	p	language:C++	signature:(struct ls_Lock* self)
+ls_lockRelease	.\src\ls_lock.c	/^void ls_lockRelease(struct ls_Lock** self)$/;"	f	language:C	signature:(struct ls_Lock** self)
+ls_lockRelease	.\src\ls_lock.h	/^extern void ls_lockRelease(struct ls_Lock** self);$/;"	p	language:C++	signature:(struct ls_Lock** self)
+ls_log	.\inc\ls_log.h	87;"	d	language:C++
+ls_log	.\inc\ls_log.h	89;"	d	language:C++
+ls_log	.\inc\ls_log.h	93;"	d	language:C++
+ls_log	.\inc\ls_log.h	95;"	d	language:C++
+ls_logCreate	.\src\ls_log.c	/^static struct ls_Log* ls_logCreate(void)$/;"	f	language:C	file:	signature:(void)
+ls_logCreateModules	.\src\ls_log.c	/^static int ls_logCreateModules(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
+ls_logInit	.\src\ls_log.c	/^static int ls_logInit(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
+ls_logRelease	.\src\ls_log.c	/^static void ls_logRelease(struct ls_Log** self)$/;"	f	language:C	file:	signature:(struct ls_Log** self)
+ls_logReleaseModules	.\src\ls_log.c	/^static void ls_logReleaseModules(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
+ls_logUninit	.\src\ls_log.c	/^static void ls_logUninit(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
+ls_logx	.\inc\ls_log.h	/^extern int ls_logx(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...);$/;"	p	language:C++	signature:(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...)
+ls_logx	.\src\ls_log.c	/^int ls_logx(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...)$/;"	f	language:C	signature:(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...)
+ls_mkdir	.\src\ls_writefile.c	/^static int ls_mkdir(const char* module, const char* monthDir, const char* dayDir)$/;"	f	language:C	file:	signature:(const char* module, const char* monthDir, const char* dayDir)
+ls_test	.\test\ls_test.c	/^struct ls_test {$/;"	s	language:C	file:
+ls_test	.\test\ls_test.h	/^extern void ls_test(const char* cmd);$/;"	p	language:C++	signature:(const char* cmd)
+ls_test_array	.\test\ls_test.h	/^extern void ls_test_array(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_array	.\test\ls_test_array.c	/^void ls_test_array(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_buffer	.\test\ls_test.h	/^extern void ls_test_buffer(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_buffer	.\test\ls_test_buffer.c	/^void ls_test_buffer(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_circularBuffer	.\test\ls_test.h	/^extern void ls_test_circularBuffer(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_circularBuffer	.\test\ls_test_circularbuffer.c	/^void ls_test_circularBuffer(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_help	.\test\ls_test.c	/^static void ls_test_help(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+ls_test_ini	.\test\ls_test.h	/^extern void ls_test_ini(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_ini	.\test\ls_test_ini.c	/^void ls_test_ini(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_lock	.\test\ls_test.h	/^extern void ls_test_lock(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_lock	.\test\ls_test_lock.c	/^void ls_test_lock(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_log	.\test\ls_test.h	/^extern void ls_test_log(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_log	.\test\ls_test_log.c	/^void ls_test_log(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_time	.\test\ls_test.h	/^extern void ls_test_time(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_time	.\test\ls_test_time.c	/^void ls_test_time(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_writedef	.\test\ls_test.h	/^extern void ls_test_writedef(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_writedef	.\test\ls_test_writedef.c	/^void ls_test_writedef(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_writefile	.\test\ls_test.h	/^extern void ls_test_writefile(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_writefile	.\test\ls_test_writefile.c	/^void ls_test_writefile(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_test_writegui	.\test\ls_test.h	/^extern void ls_test_writegui(void* arg);$/;"	p	language:C++	signature:(void* arg)
+ls_test_writegui	.\test\ls_test_writegui.c	/^void ls_test_writegui(void* arg)$/;"	f	language:C	signature:(void* arg)
+ls_timeDuration	.\src\ls_time.c	/^int ls_timeDuration(struct ls_LogTime beg, struct ls_LogTime end)$/;"	f	language:C	signature:(struct ls_LogTime beg, struct ls_LogTime end)
+ls_timeDuration	.\src\ls_time.h	/^extern int ls_timeDuration(struct ls_LogTime beg, struct ls_LogTime end); \/*!< calc end - beg, return minute value *\/$/;"	p	language:C++	signature:(struct ls_LogTime beg, struct ls_LogTime end)
+ls_uninit	.\inc\ls_log.h	/^extern void ls_uninit(void);  \/*!< uninitialize logging system *\/$/;"	p	language:C++	signature:(void)
+ls_uninit	.\src\ls_log.c	/^void ls_uninit(void)$/;"	f	language:C	signature:(void)
+ls_writeDefCreate	.\src\ls_writebase.h	/^extern struct ls_WriteBase* ls_writeDefCreate(void);$/;"	p	language:C++	signature:(void)
+ls_writeDefCreate	.\src\ls_writedef.c	/^struct ls_WriteBase* ls_writeDefCreate(void)$/;"	f	language:C	signature:(void)
+ls_writeDefMessage	.\src\ls_writedef.c	/^static void ls_writeDefMessage(struct ls_WriteBase* p, int severity, int module, const char* msg, int len)$/;"	f	language:C	file:	signature:(struct ls_WriteBase* p, int severity, int module, const char* msg, int len)
+ls_writeDefRelease	.\src\ls_writebase.h	/^extern void ls_writeDefRelease(struct ls_WriteBase** p);$/;"	p	language:C++	signature:(struct ls_WriteBase** p)
+ls_writeDefRelease	.\src\ls_writedef.c	/^void ls_writeDefRelease(struct ls_WriteBase** p)$/;"	f	language:C	signature:(struct ls_WriteBase** p)
+ls_writeFileCreate	.\src\ls_writebase.h	/^extern struct ls_WriteBase* ls_writeFileCreate(void);$/;"	p	language:C++	signature:(void)
+ls_writeFileCreate	.\src\ls_writefile.c	/^struct ls_WriteBase* ls_writeFileCreate(void)$/;"	f	language:C	signature:(void)
+ls_writeFileFlush	.\src\ls_writefile.c	/^void ls_writeFileFlush(struct ls_WriteBase* p)$/;"	f	language:C	signature:(struct ls_WriteBase* p)
+ls_writeFileInit	.\src\ls_writefile.c	/^static void ls_writeFileInit(struct ls_WriteBase* p, struct ls_Array* logModules)$/;"	f	language:C	file:	signature:(struct ls_WriteBase* p, struct ls_Array* logModules)
+ls_writeFileMessage	.\src\ls_writefile.c	/^static void ls_writeFileMessage(struct ls_WriteBase* p, int severity, int module, const char* msg, int len)$/;"	f	language:C	file:	signature:(struct ls_WriteBase* p, int severity, int module, const char* msg, int len)
+ls_writeFileRelease	.\src\ls_writebase.h	/^extern void ls_writeFileRelease(struct ls_WriteBase** p);$/;"	p	language:C++	signature:(struct ls_WriteBase** p)
+ls_writeFileRelease	.\src\ls_writefile.c	/^void ls_writeFileRelease(struct ls_WriteBase** p)$/;"	f	language:C	signature:(struct ls_WriteBase** p)
+ls_writeFileUninit	.\src\ls_writefile.c	/^static void ls_writeFileUninit(struct ls_WriteBase* p)$/;"	f	language:C	file:	signature:(struct ls_WriteBase* p)
+ls_writeGuiCreate	.\src\ls_writebase.h	/^extern struct ls_WriteBase* ls_writeGuiCreate(void);$/;"	p	language:C++	signature:(void)
+ls_writeGuiCreate	.\src\ls_writegui.c	/^struct ls_WriteBase* ls_writeGuiCreate(void)$/;"	f	language:C	signature:(void)
+ls_writeGuiMessage	.\src\ls_writegui.c	/^static void ls_writeGuiMessage(struct ls_WriteBase* p, int severity, int module, const char* msg, int len)$/;"	f	language:C	file:	signature:(struct ls_WriteBase* p, int severity, int module, const char* msg, int len)
+ls_writeGuiRelease	.\src\ls_writebase.h	/^extern void ls_writeGuiRelease(struct ls_WriteBase** p);$/;"	p	language:C++	signature:(struct ls_WriteBase** p)
+ls_writeGuiRelease	.\src\ls_writegui.c	/^void ls_writeGuiRelease(struct ls_WriteBase** p)$/;"	f	language:C	signature:(struct ls_WriteBase** p)
+ls_writeLogBuffer	.\src\ls_writelog.c	/^static void ls_writeLogBuffer(struct ls_LogBuffer* llbuf, void* arg)$/;"	f	language:C	file:	signature:(struct ls_LogBuffer* llbuf, void* arg)
+ls_writeLogCreate	.\src\ls_writelog.c	/^struct ls_WriteLog* ls_writeLogCreate(void)$/;"	f	language:C	signature:(void)
+ls_writeLogCreate	.\src\ls_writelog.h	/^extern struct ls_WriteLog* ls_writeLogCreate(void);$/;"	p	language:C++	signature:(void)
+ls_writeLogInit	.\src\ls_writelog.c	/^void ls_writeLogInit(struct ls_WriteLog* self, struct ls_Array* severityBuffers, struct ls_Array* logModules, int bufLen)$/;"	f	language:C	signature:(struct ls_WriteLog* self, struct ls_Array* severityBuffers, struct ls_Array* logModules, int bufLen)
+ls_writeLogInit	.\src\ls_writelog.h	/^extern void ls_writeLogInit(struct ls_WriteLog* self, struct ls_Array* severityBuffers, struct ls_Array* logModules, int bufLen);$/;"	p	language:C++	signature:(struct ls_WriteLog* self, struct ls_Array* severityBuffers, struct ls_Array* logModules, int bufLen)
+ls_writeLogMessage	.\src\ls_writelog.c	/^static void ls_writeLogMessage(struct ls_WriteLog* self, int writeLogByTime)$/;"	f	language:C	file:	signature:(struct ls_WriteLog* self, int writeLogByTime)
+ls_writeLogRelease	.\src\ls_writelog.c	/^void ls_writeLogRelease(struct ls_WriteLog** self)$/;"	f	language:C	signature:(struct ls_WriteLog** self)
+ls_writeLogRelease	.\src\ls_writelog.h	/^extern void ls_writeLogRelease(struct ls_WriteLog** self);$/;"	p	language:C++	signature:(struct ls_WriteLog** self)
+ls_writeLogThread	.\src\ls_writelog.c	/^static UINT WINAPI ls_writeLogThread(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+ls_writeLogThread	.\src\ls_writelog.c	/^static UINT WINAPI ls_writeLogThread(void* arg);$/;"	p	language:C	file:	signature:(void* arg)
+ls_writeLogUninit	.\src\ls_writelog.c	/^void ls_writeLogUninit(struct ls_WriteLog* self)$/;"	f	language:C	signature:(struct ls_WriteLog* self)
+ls_writeLogUninit	.\src\ls_writelog.h	/^extern void ls_writeLogUninit(struct ls_WriteLog* self);$/;"	p	language:C++	signature:(struct ls_WriteLog* self)
+main	.\demo\main.c	/^main(int argc, char* argv[], char* envp[])$/;"	f	language:C	signature:(int argc, char* argv[], char* envp[])
+main	.\test\ls_test.c	/^main(int argc, char* argv[], char* envp[])$/;"	f	language:C	signature:(int argc, char* argv[], char* envp[])
+message	.\src\ls_circularbuffer.h	/^  char  message[LS_MESSAGEBUF]; \/*!< logging message                            *\/$/;"	m	language:C++	struct:ls_LogBuffer
+millitm	.\src\ls_time.h	/^  unsigned short millitm;$/;"	m	language:C++	struct:ls_LogTime
+min	.\src\ls_time.h	/^  unsigned char  min;$/;"	m	language:C++	struct:ls_LogTime
+moduleCount	.\src\ls_writefile.c	/^  int                      moduleCount; \/*!< count of module   *\/$/;"	m	language:C	struct:ls_WriteFile	file:
+moduleIndex	.\src\ls_circularbuffer.h	/^  unsigned short moduleIndex;   \/*!< index of application module                *\/$/;"	m	language:C++	struct:ls_LogBuffer
+modules	.\src\ls_writefile.c	/^  struct ls_Module*        modules;     \/*!< array of module   *\/$/;"	m	language:C	struct:ls_WriteFile	typeref:struct:ls_WriteFile::ls_Module	file:
+mon	.\src\ls_time.h	/^  unsigned char  mon;$/;"	m	language:C++	struct:ls_LogTime
+name	.\src\ls_writebase.h	/^  char  name[LS_MODULENAME_LEN];  \/*!< name of module *\/$/;"	m	language:C++	struct:ls_Module
+object	.\src\ls_writebase.h	/^  void* object; \/*!< object of ls_WriteBase *\/$/;"	m	language:C++	struct:ls_WriteBase
+object	.\src\ls_writefile.c	/^  void* object;$/;"	m	language:C	struct:ls_WriteFile	file:
+option	.\test\ls_test.c	/^  char* option;         \/*!< test unit command  *\/$/;"	m	language:C	struct:ls_test	file:
+pushBuffer	.\src\ls_circularbuffer.c	/^static int pushBuffer(struct ls_CircularBuffer* self, const void* buffer, int len)$/;"	f	language:C	file:	signature:(struct ls_CircularBuffer* self, const void* buffer, int len)
+readPos	.\src\ls_buffer.c	/^  int   readPos;    \/*!< 当前的read位置 *\/$/;"	m	language:C	struct:ls_Buffer	file:
+sThread	.\demo\main.c	/^static UINT WINAPI sThread(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+sThreadAddNum	.\test\ls_test_lock.c	/^static UINT WINAPI sThreadAddNum(void* arg)$/;"	f	language:C	file:	signature:(void* arg)
+sec	.\src\ls_time.h	/^  unsigned char  sec;$/;"	m	language:C++	struct:ls_LogTime
+severityBuffers	.\src\ls_log.c	/^  struct ls_Array*    severityBuffers;   \/*!< array of ls_SeverityBuffer *\/$/;"	m	language:C	struct:ls_Log	typeref:struct:ls_Log::ls_Array	file:
+severityBuffers	.\src\ls_writelog.c	/^  struct ls_Array*      severityBuffers;              \/*!< severity circular buffers array object   *\/$/;"	m	language:C	struct:ls_WriteLog	typeref:struct:ls_WriteLog::ls_Array	file:
+showData	.\demo\main.c	/^static void showData(int index, short* data, int size)$/;"	f	language:C	file:	signature:(int index, short* data, int size)
+startEvent	.\src\ls_writelog.c	/^  HANDLE                startEvent;                   \/*!< 启动线程的启动事件句柄                   *\/$/;"	m	language:C	struct:ls_WriteLog	file:
+startMsgThread	.\demo\main.c	/^static HANDLE startMsgThread(UINT* pid)$/;"	f	language:C	file:	signature:(UINT* pid)
+stopMsgThread	.\demo\main.c	/^static void stopMsgThread(HANDLE hThread, DWORD pid)$/;"	f	language:C	file:	signature:(HANDLE hThread, DWORD pid)
+storage	.\src\ls_array.c	/^  int    storage;   \/*!< storage of Array  *\/$/;"	m	language:C	struct:ls_Array	file:
+streams	.\src\ls_writefile.c	/^  FILE* streams[Severity_Count];  \/*!< 文件流 *\/$/;"	m	language:C	struct:ls_ModuleStreams	file:
+streams	.\src\ls_writefile.c	/^  struct ls_ModuleStreams* streams;     \/*!< streams of module *\/$/;"	m	language:C	struct:ls_WriteFile	typeref:struct:ls_WriteFile::ls_ModuleStreams	file:
+threadDemo	.\demo\main.c	/^static void threadDemo(void)$/;"	f	language:C	file:	signature:(void)
+uninit	.\src\ls_writebase.h	/^  void (*uninit)(struct ls_WriteBase*);$/;"	m	language:C++	struct:ls_WriteBase
+uninit	.\src\ls_writefile.c	/^  void (*uninit)(struct ls_WriteBase*);$/;"	m	language:C	struct:ls_WriteFile	file:
+unit	.\test\ls_test.c	/^  void (*unit)(void*);  \/*!< test unit function *\/$/;"	m	language:C	struct:ls_test	file:
+writeFlush	.\src\ls_writebase.h	/^  void (*writeFlush)(struct ls_WriteBase*);                               \/*!< flush message interface *\/$/;"	m	language:C++	struct:ls_WriteBase
+writeFlush	.\src\ls_writefile.c	/^  void (*writeFlush)(struct ls_WriteBase*);$/;"	m	language:C	struct:ls_WriteFile	file:
+writeLog	.\src\ls_log.c	/^  struct ls_WriteLog* writeLog;$/;"	m	language:C	struct:ls_Log	typeref:struct:ls_Log::ls_WriteLog	file:
+writeLogLen	.\src\ls_writelog.c	/^  int                   writeLogLen;                  \/*!< 当buffer中的长度达到指定长度就写文件     *\/$/;"	m	language:C	struct:ls_WriteLog	file:
+writeMessage	.\src\ls_writebase.h	/^  void (*writeMessage)(struct ls_WriteBase*, int, int, const char*, int); \/*!< write message interface *\/$/;"	m	language:C++	struct:ls_WriteBase
+writeMessage	.\src\ls_writefile.c	/^  void (*writeMessage)(struct ls_WriteBase*, int, int, const char*, int);$/;"	m	language:C	struct:ls_WriteFile	file:
+writeObjects	.\src\ls_writelog.c	/^  struct ls_WriteBase*  writeObjects[Display_Count];  \/*!< 根据Display_Count的写日志对象数组        *\/$/;"	m	language:C	struct:ls_WriteLog	typeref:struct:ls_WriteLog::ls_WriteBase	file:
+writePos	.\src\ls_buffer.c	/^  int   writePos;   \/*!< 当前write位置  *\/$/;"	m	language:C	struct:ls_Buffer	file:
+writeThread	.\src\ls_writelog.c	/^  HANDLE                writeThread;                  \/*!< WriteLog模块的线程对象句柄               *\/$/;"	m	language:C	struct:ls_WriteLog	file:
+year	.\src\ls_time.h	/^  unsigned short year;$/;"	m	language:C++	struct:ls_LogTime

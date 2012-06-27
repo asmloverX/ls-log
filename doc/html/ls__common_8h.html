@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ls-log: ls_common.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>ls_common.h文件参考</h1>
+<p>
+<a href="ls__common_8h-source.html">浏览该文件的源代码。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__common_8h.html#9d61eebd439dd17e54d3fe3a6ca1eb0a">UNUSED_PARAM</a>(arg)&nbsp;&nbsp;&nbsp;{ (arg); }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__common_8h.html#13aaf9e9e194ebfd84f90bcf4e264aca">countof</a>(x)&nbsp;&nbsp;&nbsp;(sizeof((x)) / sizeof(*(x)))</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__common_8h.html#c35c7581b5b758757ab1c1adfcc5d303">LS_ERROR_LEN</a>&nbsp;&nbsp;&nbsp;(-1)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__common_8h.html#e726b32bb2d21fa47aefe1ccd7672c7e">LS_BUFFERLEN_DEF</a>&nbsp;&nbsp;&nbsp;(1024)</td></tr>
+
+<tr><td colspan="2"><br><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294">LS_ResultType</a> { <br>
+&nbsp;&nbsp;<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d">LS_Success</a> =  0, 
+<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47">LS_Failed</a> =  1, 
+<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf">LS_Failed_InvalidParameters</a> =  2, 
+<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733">LS_Failed_LoadConfig</a> =  3, 
+<br>
+&nbsp;&nbsp;<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114">LS_Failed_CreateSeverityArray</a> =  4, 
+<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1">LS_Failed_CreateModulesArray</a> =  5, 
+<a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a">LS_Failed_CreateWriteLog</a> =  6
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Result type  <a href="ls__common_8h.html#433137003dfe602c2d40334af42bc294">更多...</a><br></td></tr>
+</table>
+<hr><h2>宏定义文档</h2>
+<a class="anchor" name="13aaf9e9e194ebfd84f90bcf4e264aca"></a><!-- doxytag: member="ls_common.h::countof" ref="13aaf9e9e194ebfd84f90bcf4e264aca" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define countof          </td>
+          <td>(</td>
+          <td class="paramtype">x&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(sizeof((x)) / sizeof(*(x)))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>在文件<a class="el" href="ls__common_8h-source.html">ls_common.h</a>第<a class="el" href="ls__common_8h-source.html#l00033">33</a>行定义。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e726b32bb2d21fa47aefe1ccd7672c7e"></a><!-- doxytag: member="ls_common.h::LS_BUFFERLEN_DEF" ref="e726b32bb2d21fa47aefe1ccd7672c7e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LS_BUFFERLEN_DEF&nbsp;&nbsp;&nbsp;(1024)          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+default buffer length 
+<p>在文件<a class="el" href="ls__common_8h-source.html">ls_common.h</a>第<a class="el" href="ls__common_8h-source.html#l00036">36</a>行定义。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="c35c7581b5b758757ab1c1adfcc5d303"></a><!-- doxytag: member="ls_common.h::LS_ERROR_LEN" ref="c35c7581b5b758757ab1c1adfcc5d303" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LS_ERROR_LEN&nbsp;&nbsp;&nbsp;(-1)          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+error length return 
+<p>在文件<a class="el" href="ls__common_8h-source.html">ls_common.h</a>第<a class="el" href="ls__common_8h-source.html#l00035">35</a>行定义。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="9d61eebd439dd17e54d3fe3a6ca1eb0a"></a><!-- doxytag: member="ls_common.h::UNUSED_PARAM" ref="9d61eebd439dd17e54d3fe3a6ca1eb0a" args="(arg)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNUSED_PARAM          </td>
+          <td>(</td>
+          <td class="paramtype">arg&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;{ (arg); }</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>在文件<a class="el" href="ls__common_8h-source.html">ls_common.h</a>第<a class="el" href="ls__common_8h-source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div><p>
+<hr><h2>枚举类型文档</h2>
+<a class="anchor" name="433137003dfe602c2d40334af42bc294"></a><!-- doxytag: member="ls_common.h::LS_ResultType" ref="433137003dfe602c2d40334af42bc294" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294">LS_ResultType</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Result type 
+<p>
+! ! <dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d"></a><!-- doxytag: member="LS_Success" ref="433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d" args="" -->LS_Success</em>&nbsp;</td><td>
+success </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47"></a><!-- doxytag: member="LS_Failed" ref="433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47" args="" -->LS_Failed</em>&nbsp;</td><td>
+failed </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf"></a><!-- doxytag: member="LS_Failed_InvalidParameters" ref="433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf" args="" -->LS_Failed_InvalidParameters</em>&nbsp;</td><td>
+failed - invalid parameters </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733"></a><!-- doxytag: member="LS_Failed_LoadConfig" ref="433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733" args="" -->LS_Failed_LoadConfig</em>&nbsp;</td><td>
+failed - load configure failed </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114"></a><!-- doxytag: member="LS_Failed_CreateSeverityArray" ref="433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114" args="" -->LS_Failed_CreateSeverityArray</em>&nbsp;</td><td>
+failed - create severity array failed </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1"></a><!-- doxytag: member="LS_Failed_CreateModulesArray" ref="433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1" args="" -->LS_Failed_CreateModulesArray</em>&nbsp;</td><td>
+failed - create modules array failed </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a"></a><!-- doxytag: member="LS_Failed_CreateWriteLog" ref="433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a" args="" -->LS_Failed_CreateWriteLog</em>&nbsp;</td><td>
+failed - create ls_WriteLog failed </td></tr>
+</table>
+</dl>
+
+<p>在文件<a class="el" href="ls__common_8h-source.html">ls_common.h</a>第<a class="el" href="ls__common_8h-source.html#l00043">43</a>行定义。</p>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Tue Jun 26 10:13:42 2012 for ls-log by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

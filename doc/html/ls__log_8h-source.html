@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ls-log: ls_log.h源文件</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+<h1>ls_log.h</h1><a href="ls__log_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2012 ASMlove. All rights reserved.</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> * Redistribution and use in source and binary forms, with or without</span>
+<a name="l00005"></a>00005 <span class="comment"> * modification, are permitted provided that the following conditions</span>
+<a name="l00006"></a>00006 <span class="comment"> * are met:</span>
+<a name="l00007"></a>00007 <span class="comment"> *</span>
+<a name="l00008"></a>00008 <span class="comment"> *  * Redistributions of source code must retain the above copyright</span>
+<a name="l00009"></a>00009 <span class="comment"> *    notice, this list ofconditions and the following disclaimer.</span>
+<a name="l00010"></a>00010 <span class="comment"> *</span>
+<a name="l00011"></a>00011 <span class="comment"> *  * Redistributions in binary form must reproduce the above copyright</span>
+<a name="l00012"></a>00012 <span class="comment"> *    notice, this list of conditions and the following disclaimer in</span>
+<a name="l00013"></a>00013 <span class="comment"> *    the documentation and/or other materialsprovided with the</span>
+<a name="l00014"></a>00014 <span class="comment"> *    distribution.</span>
+<a name="l00015"></a>00015 <span class="comment"> *</span>
+<a name="l00016"></a>00016 <span class="comment"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<a name="l00017"></a>00017 <span class="comment"> * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<a name="l00018"></a>00018 <span class="comment"> * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<a name="l00019"></a>00019 <span class="comment"> * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<a name="l00020"></a>00020 <span class="comment"> * COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<a name="l00021"></a>00021 <span class="comment"> * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<a name="l00022"></a>00022 <span class="comment"> * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<a name="l00023"></a>00023 <span class="comment"> * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<a name="l00024"></a>00024 <span class="comment"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<a name="l00025"></a>00025 <span class="comment"> * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<a name="l00026"></a>00026 <span class="comment"> * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<a name="l00027"></a>00027 <span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span>
+<a name="l00028"></a>00028 <span class="comment"> */</span>
+<a name="l00029"></a>00029 <span class="preprocessor">#ifndef __LS_LOG_HEADER_H__</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#define __LS_LOG_HEADER_H__</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00032"></a>00032 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">"C"</span> {
+<a name="l00034"></a>00034 <span class="preprocessor">#endif</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00036"></a>00036 
+<a name="l00041"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff">00041</a> <span class="keyword">enum</span> <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff" title="display type of log information">LS_DisplayType</a> {
+<a name="l00042"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395">00042</a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395">Display_Console</a>   = 0, 
+<a name="l00043"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c">00043</a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c">Display_GUI</a>       = 1, 
+<a name="l00044"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe">00044</a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe">Display_File</a>      = 2, 
+<a name="l00045"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168">00045</a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168">Display_Database</a>  = 3, 
+<a name="l00046"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813">00046</a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813">Display_Network</a>   = 4, 
+<a name="l00048"></a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300">00048</a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300">Display_Count</a>     = 5, 
+<a name="l00049"></a>00049 };
+<a name="l00054"></a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2">00054</a> <span class="keyword">enum</span> <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2" title="severity type of log information">LS_SeverityType</a> {
+<a name="l00055"></a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f">00055</a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f">Severity_Debug</a>    = 0, 
+<a name="l00056"></a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19">00056</a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19">Severity_Message</a>  = 1, 
+<a name="l00057"></a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8">00057</a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8">Severity_Warning</a>  = 2, 
+<a name="l00058"></a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf">00058</a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf">Severity_Error</a>    = 3, 
+<a name="l00060"></a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b">00060</a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b">Severity_Count</a>    = 4, 
+<a name="l00061"></a>00061 };
+<a name="l00062"></a>00062 
+<a name="l00068"></a>00068 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ls__log_8h.html#fb5cdceb6582f96fdaca92a16a1878b8">ls_init</a>(<span class="keywordtype">void</span>);     
+<a name="l00069"></a>00069 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ls__log_8h.html#f7ea81c291c80d4dd882990400631904">ls_uninit</a>(<span class="keywordtype">void</span>);  
+<a name="l00084"></a>00084 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ls__log_8h.html#5f71f133471845639c421140b7293aae">ls_logx</a>(<span class="keywordtype">int</span> display, <span class="keywordtype">int</span> severity, <span class="keywordtype">int</span> module, <span class="keywordtype">char</span>* file, <span class="keywordtype">char</span>* func, <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);
+<a name="l00085"></a>00085 <span class="preprocessor">#if _WIN32 || _WIN64</span>
+<a name="l00086"></a>00086 <span class="preprocessor"></span><span class="preprocessor">  #ifdef LS_LOG_ON</span>
+<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)</span>
+<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">  #else</span>
+<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)</span>
+<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="preprocessor">  #endif</span>
+<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="preprocessor">  #ifdef LS_LOG_ON</span>
+<a name="l00093"></a>00093 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">  #else</span>
+<a name="l00095"></a><a class="code" href="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe">00095</a> <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)</span>
+<a name="l00096"></a>00096 <span class="preprocessor"></span><span class="preprocessor">  #endif</span>
+<a name="l00097"></a>00097 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00098"></a>00098 <span class="preprocessor"></span>
+<a name="l00099"></a>00099 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00100"></a>00100 <span class="preprocessor"></span>}
+<a name="l00101"></a>00101 <span class="preprocessor">#endif</span>
+<a name="l00102"></a>00102 <span class="preprocessor"></span>
+<a name="l00103"></a>00103 <span class="preprocessor">#endif  </span><span class="comment">/* __LS_LOG_HEADER_H__ */</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Tue Jun 26 10:13:42 2012 for ls-log by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

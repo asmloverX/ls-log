@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ls-log: ls_log.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>ls_log.h文件参考</h1>
+<p>
+<a href="ls__log_8h-source.html">浏览该文件的源代码。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe">ls_log</a>(display, severity, module, fmt,...)</td></tr>
+
+<tr><td colspan="2"><br><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff">LS_DisplayType</a> { <br>
+&nbsp;&nbsp;<a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395">Display_Console</a> =  0, 
+<a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c">Display_GUI</a> =  1, 
+<a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe">Display_File</a> =  2, 
+<a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168">Display_Database</a> =  3, 
+<br>
+&nbsp;&nbsp;<a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813">Display_Network</a> =  4, 
+<a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300">Display_Count</a> =  5
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">display type of log information  <a href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2">LS_SeverityType</a> { <br>
+&nbsp;&nbsp;<a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f">Severity_Debug</a> =  0, 
+<a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19">Severity_Message</a> =  1, 
+<a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8">Severity_Warning</a> =  2, 
+<a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf">Severity_Error</a> =  3, 
+<br>
+&nbsp;&nbsp;<a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b">Severity_Count</a> =  4
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">severity type of log information  <a href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2">更多...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#fb5cdceb6582f96fdaca92a16a1878b8">ls_init</a> (void)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#f7ea81c291c80d4dd882990400631904">ls_uninit</a> (void)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#5f71f133471845639c421140b7293aae">ls_logx</a> (int display, int severity, int module, char *file, char *func, int line, const char *fmt,...)</td></tr>
+
+</table>
+<hr><h2>宏定义文档</h2>
+<a class="anchor" name="d15c6cf968b60858414f50826b47efbe"></a><!-- doxytag: member="ls_log.h::ls_log" ref="d15c6cf968b60858414f50826b47efbe" args="(display, severity, module, fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ls_log          </td>
+          <td>(</td>
+          <td class="paramtype">display,         <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">severity,         <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">module,         <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fmt,         <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"> <em>...</em>&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>在文件<a class="el" href="ls__log_8h-source.html">ls_log.h</a>第<a class="el" href="ls__log_8h-source.html#l00095">95</a>行定义。</p>
+
+</div>
+</div><p>
+<hr><h2>枚举类型文档</h2>
+<a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff"></a><!-- doxytag: member="ls_log.h::LS_DisplayType" ref="9b27b472a96c7ca8767fd5b01ba416ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff">LS_DisplayType</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+display type of log information 
+<p>
+! ! <dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395"></a><!-- doxytag: member="Display_Console" ref="9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395" args="" -->Display_Console</em>&nbsp;</td><td>
+display log information to console window </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c"></a><!-- doxytag: member="Display_GUI" ref="9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c" args="" -->Display_GUI</em>&nbsp;</td><td>
+display log information to gui debug window </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe"></a><!-- doxytag: member="Display_File" ref="9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe" args="" -->Display_File</em>&nbsp;</td><td>
+display log information to files </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168"></a><!-- doxytag: member="Display_Database" ref="9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168" args="" -->Display_Database</em>&nbsp;</td><td>
+display log information to databases </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813"></a><!-- doxytag: member="Display_Network" ref="9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813" args="" -->Display_Network</em>&nbsp;</td><td>
+display log information to other terminal by network </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300"></a><!-- doxytag: member="Display_Count" ref="9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300" args="" -->Display_Count</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+
+<p>在文件<a class="el" href="ls__log_8h-source.html">ls_log.h</a>第<a class="el" href="ls__log_8h-source.html#l00041">41</a>行定义。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="8315d06030706dcda1073b2d27a243e2"></a><!-- doxytag: member="ls_log.h::LS_SeverityType" ref="8315d06030706dcda1073b2d27a243e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2">LS_SeverityType</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+severity type of log information 
+<p>
+! ! <dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f"></a><!-- doxytag: member="Severity_Debug" ref="8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f" args="" -->Severity_Debug</em>&nbsp;</td><td>
+debug informations </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19"></a><!-- doxytag: member="Severity_Message" ref="8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19" args="" -->Severity_Message</em>&nbsp;</td><td>
+normal messages </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8"></a><!-- doxytag: member="Severity_Warning" ref="8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8" args="" -->Severity_Warning</em>&nbsp;</td><td>
+warning informations </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf"></a><!-- doxytag: member="Severity_Error" ref="8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf" args="" -->Severity_Error</em>&nbsp;</td><td>
+error informations </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b"></a><!-- doxytag: member="Severity_Count" ref="8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b" args="" -->Severity_Count</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+
+<p>在文件<a class="el" href="ls__log_8h-source.html">ls_log.h</a>第<a class="el" href="ls__log_8h-source.html#l00054">54</a>行定义。</p>
+
+</div>
+</div><p>
+<hr><h2>函数文档</h2>
+<a class="anchor" name="fb5cdceb6582f96fdaca92a16a1878b8"></a><!-- doxytag: member="ls_log.h::ls_init" ref="fb5cdceb6582f96fdaca92a16a1878b8" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ls_init           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+! Usage: ! ls_init - 在系统启动的时候初始化执行一些操作, 加载对应的资源 ! ls_uninit - 在系统退出之前用来回收资源 initiliaze logging system 
+</div>
+</div><p>
+<a class="anchor" name="5f71f133471845639c421140b7293aae"></a><!-- doxytag: member="ls_log.h::ls_logx" ref="5f71f133471845639c421140b7293aae" args="(int display, int severity, int module, char *file, char *func, int line, const char *fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ls_logx           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+! 记录日志信息的操作接口, 使用方式类似printf系列的函数 ! ! Usage: ! ls_log(display, severity, module, fmt, ...) ! <dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>display,:</em>&nbsp;</td><td>该日志信息的显示模式, 取值见LS_DisplayType ! </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>severity,:</em>&nbsp;</td><td>该日志信息的等级, 取值见LS_SeverityType ! </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>module,:</em>&nbsp;</td><td>该日志信息所属的模块, 具体的模块ID取决于用户自己配置的配置文件 ! </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fmt/...,:</em>&nbsp;</td><td>后面的参数使用类似于printf ! ! Example: ! ls_log(Display_File, Severity_Message, 0, "This is log message test, value = %d\n", value); </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f7ea81c291c80d4dd882990400631904"></a><!-- doxytag: member="ls_log.h::ls_uninit" ref="f7ea81c291c80d4dd882990400631904" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ls_uninit           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+uninitialize logging system 
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Tue Jun 26 10:13:42 2012 for ls-log by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>
