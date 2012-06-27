@@ -4,12 +4,49 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+13aaf9e9e194ebfd84f90bcf4e264aca	.\doc\html\ls__common_8h.html	/^<a class="anchor" name="13aaf9e9e194ebfd84f90bcf4e264aca"><\/a><!-- doxytag: member="ls_common.h::countof" ref="13aaf9e9e194ebfd84f90bcf4e264aca" args="(x)" -->$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc294	.\doc\html\ls__common_8h.html	/^<a class="anchor" name="433137003dfe602c2d40334af42bc294"><\/a><!-- doxytag: member="ls_common.h::LS_ResultType" ref="433137003dfe602c2d40334af42bc294" args="" -->$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf"><\/a><!-- doxytag: member="LS_Failed_InvalidParameters" ref="433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf" args="" -->LS_Failed_InvalidParameters<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47"><\/a><!-- doxytag: member="LS_Failed" ref="433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47" args="" -->LS_Failed<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d"><\/a><!-- doxytag: member="LS_Success" ref="433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d" args="" -->LS_Success<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114"><\/a><!-- doxytag: member="LS_Failed_CreateSeverityArray" ref="433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114" args="" -->LS_Failed_CreateSeverityArray<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733"><\/a><!-- doxytag: member="LS_Failed_LoadConfig" ref="433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733" args="" -->LS_Failed_LoadConfig<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1"><\/a><!-- doxytag: member="LS_Failed_CreateModulesArray" ref="433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1" args="" -->LS_Failed_CreateModulesArray<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a	.\doc\html\ls__common_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a"><\/a><!-- doxytag: member="LS_Failed_CreateWriteLog" ref="433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a" args="" -->LS_Failed_CreateWriteLog<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+5f71f133471845639c421140b7293aae	.\doc\html\ls__log_8h.html	/^<a class="anchor" name="5f71f133471845639c421140b7293aae"><\/a><!-- doxytag: member="ls_log.h::ls_logx" ref="5f71f133471845639c421140b7293aae" args="(int display, int severity, int module, char *file, char *func, int line, const char *fmt,...)" -->$/;"	a	language:HTML
+8315d06030706dcda1073b2d27a243e2	.\doc\html\ls__log_8h.html	/^<a class="anchor" name="8315d06030706dcda1073b2d27a243e2"><\/a><!-- doxytag: member="ls_log.h::LS_SeverityType" ref="8315d06030706dcda1073b2d27a243e2" args="" -->$/;"	a	language:HTML
+8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19"><\/a><!-- doxytag: member="Severity_Message" ref="8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19" args="" -->Severity_Message<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f"><\/a><!-- doxytag: member="Severity_Debug" ref="8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f" args="" -->Severity_Debug<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf"><\/a><!-- doxytag: member="Severity_Error" ref="8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf" args="" -->Severity_Error<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b"><\/a><!-- doxytag: member="Severity_Count" ref="8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b" args="" -->Severity_Count<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8"><\/a><!-- doxytag: member="Severity_Warning" ref="8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8" args="" -->Severity_Warning<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ff	.\doc\html\ls__log_8h.html	/^<a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff"><\/a><!-- doxytag: member="ls_log.h::LS_DisplayType" ref="9b27b472a96c7ca8767fd5b01ba416ff" args="" -->$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168"><\/a><!-- doxytag: member="Display_Database" ref="9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168" args="" -->Display_Database<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe"><\/a><!-- doxytag: member="Display_File" ref="9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe" args="" -->Display_File<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300"><\/a><!-- doxytag: member="Display_Count" ref="9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300" args="" -->Display_Count<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813"><\/a><!-- doxytag: member="Display_Network" ref="9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813" args="" -->Display_Network<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395"><\/a><!-- doxytag: member="Display_Console" ref="9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395" args="" -->Display_Console<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c	.\doc\html\ls__log_8h.html	/^<tr><td valign="top"><em><a class="anchor" name="9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c"><\/a><!-- doxytag: member="Display_GUI" ref="9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c" args="" -->Display_GUI<\/em>&nbsp;<\/td><td>$/;"	a	language:HTML
+9d61eebd439dd17e54d3fe3a6ca1eb0a	.\doc\html\ls__common_8h.html	/^<a class="anchor" name="9d61eebd439dd17e54d3fe3a6ca1eb0a"><\/a><!-- doxytag: member="ls_common.h::UNUSED_PARAM" ref="9d61eebd439dd17e54d3fe3a6ca1eb0a" args="(arg)" -->$/;"	a	language:HTML
+BIN	.\demo\makefile-msvc7.1.mk	/^BIN		= ls-demo.exe$/;"	m	language:Make
+BIN	.\makefile-dll-msvc7.1.mk	/^BIN 	= ls-log.dll$/;"	m	language:Make
 BIN	.\makefile-dll.mk	/^BIN 	= ls-log.dll$/;"	m	language:Make
+BIN	.\makefile-lib-msvc7.1.mk	/^BIN 	= ls-log.lib$/;"	m	language:Make
 BIN	.\makefile-lib.mk	/^BIN 	= ls-log.lib$/;"	m	language:Make
+BIN	.\makefile-msvc7.1.mk	/^BIN 	= ls-log.exe$/;"	m	language:Make
+CC	.\demo\makefile-msvc7.1.mk	/^CC 		= cl -c -nologo$/;"	m	language:Make
+CC	.\makefile-dll-msvc7.1.mk	/^CC 		= cl -c -nologo$/;"	m	language:Make
 CC	.\makefile-dll.mk	/^CC 		= cl -c -nologo$/;"	m	language:Make
+CC	.\makefile-lib-msvc7.1.mk	/^CC		= cl -c -nologo$/;"	m	language:Make
 CC	.\makefile-lib.mk	/^CC		= cl -c -nologo$/;"	m	language:Make
+CC	.\makefile-msvc7.1.mk	/^CC 		= cl -c -nologo$/;"	m	language:Make
+CFLAG	.\demo\makefile-msvc7.1.mk	/^CFLAG	= -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
+CFLAG	.\makefile-dll-msvc7.1.mk	/^CFLAG = -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
 CFLAG	.\makefile-dll.mk	/^CFLAG = -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
+CFLAG	.\makefile-lib-msvc7.1.mk	/^CFLAG	= -O2 -W4 -MT -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
 CFLAG	.\makefile-lib.mk	/^CFLAG	= -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
+CFLAG	.\makefile-msvc7.1.mk	/^CFLAG = -O2 -W4 -MD -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\\$/;"	m	language:Make
+DEFFILE	.\makefile-dll-msvc7.1.mk	/^DEFFILE = ls-log.def$/;"	m	language:Make
 DEFFILE	.\makefile-dll.mk	/^DEFFILE = ls-log.def$/;"	m	language:Make
 Display_Console	.\inc\ls_log.h	/^  Display_Console   = 0, \/*!< display log information to console window            *\/$/;"	e	language:C++	enum:LS_DisplayType
 Display_Count	.\inc\ls_log.h	/^  Display_Count     = 5, $/;"	e	language:C++	enum:LS_DisplayType
@@ -17,11 +54,19 @@ Display_Database	.\inc\ls_log.h	/^  Display_Database  = 3, \/*!< display log inf
 Display_File	.\inc\ls_log.h	/^  Display_File      = 2, \/*!< display log information to files                     *\/$/;"	e	language:C++	enum:LS_DisplayType
 Display_GUI	.\inc\ls_log.h	/^  Display_GUI       = 1, \/*!< display log information to gui debug window          *\/$/;"	e	language:C++	enum:LS_DisplayType
 Display_Network	.\inc\ls_log.h	/^  Display_Network   = 4, \/*!< display log information to other terminal by network *\/$/;"	e	language:C++	enum:LS_DisplayType
+IMPLIB	.\makefile-dll-msvc7.1.mk	/^IMPLIB= ls-log.lib$/;"	m	language:Make
 IMPLIB	.\makefile-dll.mk	/^IMPLIB= ls-log.lib$/;"	m	language:Make
 L	.\src\ls_lock.c	/^  Locker L;$/;"	m	language:C	struct:ls_Lock	file:
+LFLAG	.\demo\makefile-msvc7.1.mk	/^LFLAG	= -DEBUG -PDB:"ls-demo.pdb" kernel32.lib user32.lib gdi32.lib \\$/;"	m	language:Make
+LFLAG	.\makefile-dll-msvc7.1.mk	/^LFLAG = -DEBUG -PDB:"ls-log.pdb"$/;"	m	language:Make
 LFLAG	.\makefile-dll.mk	/^LFLAG = -DEBUG -PDB:"ls-log.pdb" -manifest -manifestfile:$(BIN).manifest\\$/;"	m	language:Make
+LFLAG	.\makefile-msvc7.1.mk	/^LFLAG = -DEBUG -PDB:"ls-log.pdb"$/;"	m	language:Make
+LIB	.\makefile-lib-msvc7.1.mk	/^LIB 	= lib -nologo$/;"	m	language:Make
 LIB	.\makefile-lib.mk	/^LIB 	= lib -nologo$/;"	m	language:Make
+LINK	.\demo\makefile-msvc7.1.mk	/^LINK	= link -nologo$/;"	m	language:Make
+LINK	.\makefile-dll-msvc7.1.mk	/^LINK	= link -nologo -dll -def:$(DEFFILE)$/;"	m	language:Make
 LINK	.\makefile-dll.mk	/^LINK	= link -nologo -dll -def:$(DEFFILE)$/;"	m	language:Make
+LINK	.\makefile-msvc7.1.mk	/^LINK 	= link -nologo$/;"	m	language:Make
 LS_ARRAYLEN_DEF	.\src\ls_array.c	37;"	d	language:C	file:
 LS_ARRAYLEN_DEF	.\src\ls_log.c	47;"	d	language:C	file:
 LS_BUFFERLEN_DEF	.\inc\ls_common.h	36;"	d	language:C++
@@ -61,14 +106,28 @@ Locker_Uninit	.\src\ls_lock.c	42;"	d	language:C	file:
 Locker_Uninit	.\src\ls_lock.c	48;"	d	language:C	file:
 Locker_Uninit	.\src\ls_lock.c	54;"	d	language:C	file:
 MT	.\makefile-dll.mk	/^MT 		= mt -nologo$/;"	m	language:Make
+OBJS	.\demo\makefile-msvc7.1.mk	/^OBJS 	= main.obj$/;"	m	language:Make
+OBJS	.\makefile-dll-msvc7.1.mk	/^OBJS	= ls_array.obj ls_buffer.obj ls_circularbuffer.obj ls_ini.obj\\$/;"	m	language:Make
 OBJS	.\makefile-dll.mk	/^OBJS	= ls_array.obj ls_buffer.obj ls_circularbuffer.obj ls_ini.obj\\$/;"	m	language:Make
+OBJS	.\makefile-lib-msvc7.1.mk	/^OBJS 	= ls_array.obj ls_buffer.obj ls_circularbuffer.obj ls_ini.obj\\$/;"	m	language:Make
 OBJS	.\makefile-lib.mk	/^OBJS 	= ls_array.obj ls_buffer.obj ls_circularbuffer.obj ls_ini.obj\\$/;"	m	language:Make
+OBJS	.\makefile-msvc7.1.mk	/^OBJS 	= ls_buffer.obj ls_lock.obj ls_circularbuffer.obj ls_log.obj\\$/;"	m	language:Make
+RC	.\makefile-dll-msvc7.1.mk	/^RC 		= rc$/;"	m	language:Make
 RC	.\makefile-dll.mk	/^RC 		= rc$/;"	m	language:Make
+RES	.\makefile-dll-msvc7.1.mk	/^RES 	= ls-log.res$/;"	m	language:Make
 RES	.\makefile-dll.mk	/^RES 	= ls-log.res$/;"	m	language:Make
+RM	.\demo\makefile-msvc7.1.mk	/^RM 		= rm$/;"	m	language:Make
+RM	.\makefile-dll-msvc7.1.mk	/^RM 		= rm$/;"	m	language:Make
 RM	.\makefile-dll.mk	/^RM 		= rm$/;"	m	language:Make
+RM	.\makefile-lib-msvc7.1.mk	/^RM 		= rm$/;"	m	language:Make
 RM	.\makefile-lib.mk	/^RM 		= rm$/;"	m	language:Make
+RM	.\makefile-msvc7.1.mk	/^RM 		= rm$/;"	m	language:Make
+SRCS	.\demo\makefile-msvc7.1.mk	/^SRCS 	= main.c$/;"	m	language:Make
+SRCS	.\makefile-dll-msvc7.1.mk	/^SRCS 	= .\/src\/ls_array.c .\/src\/ls_buffer.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
 SRCS	.\makefile-dll.mk	/^SRCS 	= .\/src\/ls_array.c .\/src\/ls_buffer.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
+SRCS	.\makefile-lib-msvc7.1.mk	/^SRCS	= .\/src\/ls_array.c .\/src\/ls_buffer.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
 SRCS	.\makefile-lib.mk	/^SRCS	= .\/src\/ls_array.c .\/src\/ls_buffer.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
+SRCS	.\makefile-msvc7.1.mk	/^SRCS 	= .\/src\/ls_buffer.c .\/src\/ls_lock.c .\/src\/ls_circularbuffer.c\\$/;"	m	language:Make
 Severity_Count	.\inc\ls_log.h	/^  Severity_Count    = 4, $/;"	e	language:C++	enum:LS_SeverityType
 Severity_Debug	.\inc\ls_log.h	/^  Severity_Debug    = 0, \/*!< debug informations   *\/$/;"	e	language:C++	enum:LS_SeverityType
 Severity_Error	.\inc\ls_log.h	/^  Severity_Error    = 3, \/*!< error informations   *\/$/;"	e	language:C++	enum:LS_SeverityType
@@ -120,16 +179,21 @@ begin	.\src\ls_array.c	/^  void** begin;     \/*!< begin address     *\/$/;"	m	l
 bufLen	.\src\ls_buffer.c	/^  int   bufLen;     \/*!< bufferø’º‰¥Û–° *\/$/;"	m	language:C	struct:ls_Buffer	file:
 buffer	.\src\ls_buffer.c	/^  char* buffer;     \/*!< ¥Ê¥¢µƒ ˝æ›ø’º‰ *\/$/;"	m	language:C	struct:ls_Buffer	file:
 buffer	.\src\ls_writebase.h	/^  struct ls_CircularBuffer* buffer; \/*!< circular buffer of severity buffer *\/$/;"	m	language:C++	struct:ls_SeverityBuffer	typeref:struct:ls_SeverityBuffer::ls_CircularBuffer
+c35c7581b5b758757ab1c1adfcc5d303	.\doc\html\ls__common_8h.html	/^<a class="anchor" name="c35c7581b5b758757ab1c1adfcc5d303"><\/a><!-- doxytag: member="ls_common.h::LS_ERROR_LEN" ref="c35c7581b5b758757ab1c1adfcc5d303" args="" -->$/;"	a	language:HTML
 countof	.\inc\ls_common.h	33;"	d	language:C++
+d15c6cf968b60858414f50826b47efbe	.\doc\html\ls__log_8h.html	/^<a class="anchor" name="d15c6cf968b60858414f50826b47efbe"><\/a><!-- doxytag: member="ls_log.h::ls_log" ref="d15c6cf968b60858414f50826b47efbe" args="(display, severity, module, fmt,...)" -->$/;"	a	language:HTML
 dataLen	.\src\ls_buffer.c	/^  int   dataLen;    \/*!<  ˝æ›ø’º‰µƒ¥Û–° *\/$/;"	m	language:C	struct:ls_Buffer	file:
 day	.\src\ls_time.h	/^  unsigned char  day;$/;"	m	language:C++	struct:ls_LogTime
 displayType	.\src\ls_circularbuffer.h	/^  unsigned char  displayType;   \/*!< display module - see enum LS_DisplayType   *\/$/;"	m	language:C++	struct:ls_LogBuffer
+e726b32bb2d21fa47aefe1ccd7672c7e	.\doc\html\ls__common_8h.html	/^<a class="anchor" name="e726b32bb2d21fa47aefe1ccd7672c7e"><\/a><!-- doxytag: member="ls_common.h::LS_BUFFERLEN_DEF" ref="e726b32bb2d21fa47aefe1ccd7672c7e" args="" -->$/;"	a	language:HTML
 elements	.\src\ls_array.c	/^  void** elements;  \/*!< elements of Array *\/$/;"	m	language:C	struct:ls_Array	file:
 end	.\src\ls_array.c	/^  void** end;       \/*!< end address       *\/$/;"	m	language:C	struct:ls_Array	file:
 exitEvent	.\src\ls_writelog.c	/^  HANDLE                exitEvent;                    \/*!< Ω· ¯œﬂ≥Ãµƒ ±∫ÚΩ· ¯ ¬º˛∂‘œÛæ‰±˙           *\/$/;"	m	language:C	struct:ls_WriteLog	file:
 exit_ev	.\test\ls_test_buffer.c	/^  HANDLE            exit_ev;$/;"	m	language:C	struct:TransNoLock	file:
 exit_ev	.\test\ls_test_buffer.c	/^  HANDLE            exit_ev;$/;"	m	language:C	struct:TransWithLock	file:
 exit_ev	.\test\ls_test_circularbuffer.c	/^  HANDLE exit_ev;$/;"	m	language:C	struct:TransCircularBuffer	file:
+f7ea81c291c80d4dd882990400631904	.\doc\html\ls__log_8h.html	/^<a class="anchor" name="f7ea81c291c80d4dd882990400631904"><\/a><!-- doxytag: member="ls_log.h::ls_uninit" ref="f7ea81c291c80d4dd882990400631904" args="(void)" -->$/;"	a	language:HTML
+fb5cdceb6582f96fdaca92a16a1878b8	.\doc\html\ls__log_8h.html	/^<a class="anchor" name="fb5cdceb6582f96fdaca92a16a1878b8"><\/a><!-- doxytag: member="ls_log.h::ls_init" ref="fb5cdceb6582f96fdaca92a16a1878b8" args="(void)" -->$/;"	a	language:HTML
 file	.\src\ls_ini.c	/^  char file[_MAX_PATH]; \/*!< ini filename *\/$/;"	m	language:C	struct:ls_Ini	file:
 freeLen	.\src\ls_buffer.c	/^  int   freeLen;    \/*!< ø’œ–ø’º‰µƒ¥Û–° *\/$/;"	m	language:C	struct:ls_Buffer	file:
 g_sLog	.\src\ls_log.c	/^static struct ls_Log* g_sLog = NULL;$/;"	v	language:C	typeref:struct:ls_Log	file:
@@ -145,6 +209,127 @@ id	.\src\ls_writebase.h	/^  int                       id;     \/*!< id of severi
 id	.\src\ls_writebase.h	/^  int   id;                       \/*!< id of module   *\/$/;"	m	language:C++	struct:ls_Module
 init	.\src\ls_writebase.h	/^  void (*init)(struct ls_WriteBase*, struct ls_Array* logModules);$/;"	m	language:C++	struct:ls_WriteBase
 init	.\src\ls_writefile.c	/^  void (*init)(struct ls_WriteBase*, struct ls_Array* logModules);$/;"	m	language:C	struct:ls_WriteFile	file:
+l00001	.\doc\html\ls__common_8h-source.html	/^<h1>ls_common.h<\/h1><a href="ls__common_8h.html">ÊµèËßàËØ•Êñá‰ª∂ÁöÑÊñáÊ°£„ÄÇ<\/a><div class="fragment"><pre class="fragment"><a name="l00001"><\/a>00001 <span class="comment">\/*<\/span>$/;"	a	language:HTML
+l00001	.\doc\html\ls__log_8h-source.html	/^<h1>ls_log.h<\/h1><a href="ls__log_8h.html">ÊµèËßàËØ•Êñá‰ª∂ÁöÑÊñáÊ°£„ÄÇ<\/a><div class="fragment"><pre class="fragment"><a name="l00001"><\/a>00001 <span class="comment">\/*<\/span>$/;"	a	language:HTML
+l00002	.\doc\html\ls__common_8h-source.html	/^<a name="l00002"><\/a>00002 <span class="comment"> * Copyright (c) 2012 ASMlove. All rights reserved.<\/span>$/;"	a	language:HTML
+l00002	.\doc\html\ls__log_8h-source.html	/^<a name="l00002"><\/a>00002 <span class="comment"> * Copyright (c) 2012 ASMlove. All rights reserved.<\/span>$/;"	a	language:HTML
+l00003	.\doc\html\ls__common_8h-source.html	/^<a name="l00003"><\/a>00003 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00003	.\doc\html\ls__log_8h-source.html	/^<a name="l00003"><\/a>00003 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00004	.\doc\html\ls__common_8h-source.html	/^<a name="l00004"><\/a>00004 <span class="comment"> * Redistribution and use in source and binary forms, with or without<\/span>$/;"	a	language:HTML
+l00004	.\doc\html\ls__log_8h-source.html	/^<a name="l00004"><\/a>00004 <span class="comment"> * Redistribution and use in source and binary forms, with or without<\/span>$/;"	a	language:HTML
+l00005	.\doc\html\ls__common_8h-source.html	/^<a name="l00005"><\/a>00005 <span class="comment"> * modification, are permitted provided that the following conditions<\/span>$/;"	a	language:HTML
+l00005	.\doc\html\ls__log_8h-source.html	/^<a name="l00005"><\/a>00005 <span class="comment"> * modification, are permitted provided that the following conditions<\/span>$/;"	a	language:HTML
+l00006	.\doc\html\ls__common_8h-source.html	/^<a name="l00006"><\/a>00006 <span class="comment"> * are met:<\/span>$/;"	a	language:HTML
+l00006	.\doc\html\ls__log_8h-source.html	/^<a name="l00006"><\/a>00006 <span class="comment"> * are met:<\/span>$/;"	a	language:HTML
+l00007	.\doc\html\ls__common_8h-source.html	/^<a name="l00007"><\/a>00007 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00007	.\doc\html\ls__log_8h-source.html	/^<a name="l00007"><\/a>00007 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00008	.\doc\html\ls__common_8h-source.html	/^<a name="l00008"><\/a>00008 <span class="comment"> *  * Redistributions of source code must retain the above copyright<\/span>$/;"	a	language:HTML
+l00008	.\doc\html\ls__log_8h-source.html	/^<a name="l00008"><\/a>00008 <span class="comment"> *  * Redistributions of source code must retain the above copyright<\/span>$/;"	a	language:HTML
+l00009	.\doc\html\ls__common_8h-source.html	/^<a name="l00009"><\/a>00009 <span class="comment"> *    notice, this list ofconditions and the following disclaimer.<\/span>$/;"	a	language:HTML
+l00009	.\doc\html\ls__log_8h-source.html	/^<a name="l00009"><\/a>00009 <span class="comment"> *    notice, this list ofconditions and the following disclaimer.<\/span>$/;"	a	language:HTML
+l00010	.\doc\html\ls__common_8h-source.html	/^<a name="l00010"><\/a>00010 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00010	.\doc\html\ls__log_8h-source.html	/^<a name="l00010"><\/a>00010 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00011	.\doc\html\ls__common_8h-source.html	/^<a name="l00011"><\/a>00011 <span class="comment"> *  * Redistributions in binary form must reproduce the above copyright<\/span>$/;"	a	language:HTML
+l00011	.\doc\html\ls__log_8h-source.html	/^<a name="l00011"><\/a>00011 <span class="comment"> *  * Redistributions in binary form must reproduce the above copyright<\/span>$/;"	a	language:HTML
+l00012	.\doc\html\ls__common_8h-source.html	/^<a name="l00012"><\/a>00012 <span class="comment"> *    notice, this list of conditions and the following disclaimer in<\/span>$/;"	a	language:HTML
+l00012	.\doc\html\ls__log_8h-source.html	/^<a name="l00012"><\/a>00012 <span class="comment"> *    notice, this list of conditions and the following disclaimer in<\/span>$/;"	a	language:HTML
+l00013	.\doc\html\ls__common_8h-source.html	/^<a name="l00013"><\/a>00013 <span class="comment"> *    the documentation and\/or other materialsprovided with the<\/span>$/;"	a	language:HTML
+l00013	.\doc\html\ls__log_8h-source.html	/^<a name="l00013"><\/a>00013 <span class="comment"> *    the documentation and\/or other materialsprovided with the<\/span>$/;"	a	language:HTML
+l00014	.\doc\html\ls__common_8h-source.html	/^<a name="l00014"><\/a>00014 <span class="comment"> *    distribution.<\/span>$/;"	a	language:HTML
+l00014	.\doc\html\ls__log_8h-source.html	/^<a name="l00014"><\/a>00014 <span class="comment"> *    distribution.<\/span>$/;"	a	language:HTML
+l00015	.\doc\html\ls__common_8h-source.html	/^<a name="l00015"><\/a>00015 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00015	.\doc\html\ls__log_8h-source.html	/^<a name="l00015"><\/a>00015 <span class="comment"> *<\/span>$/;"	a	language:HTML
+l00016	.\doc\html\ls__common_8h-source.html	/^<a name="l00016"><\/a>00016 <span class="comment"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<\/span>$/;"	a	language:HTML
+l00016	.\doc\html\ls__log_8h-source.html	/^<a name="l00016"><\/a>00016 <span class="comment"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<\/span>$/;"	a	language:HTML
+l00017	.\doc\html\ls__common_8h-source.html	/^<a name="l00017"><\/a>00017 <span class="comment"> * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<\/span>$/;"	a	language:HTML
+l00017	.\doc\html\ls__log_8h-source.html	/^<a name="l00017"><\/a>00017 <span class="comment"> * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<\/span>$/;"	a	language:HTML
+l00018	.\doc\html\ls__common_8h-source.html	/^<a name="l00018"><\/a>00018 <span class="comment"> * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS<\/span>$/;"	a	language:HTML
+l00018	.\doc\html\ls__log_8h-source.html	/^<a name="l00018"><\/a>00018 <span class="comment"> * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS<\/span>$/;"	a	language:HTML
+l00019	.\doc\html\ls__common_8h-source.html	/^<a name="l00019"><\/a>00019 <span class="comment"> * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE<\/span>$/;"	a	language:HTML
+l00019	.\doc\html\ls__log_8h-source.html	/^<a name="l00019"><\/a>00019 <span class="comment"> * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE<\/span>$/;"	a	language:HTML
+l00020	.\doc\html\ls__common_8h-source.html	/^<a name="l00020"><\/a>00020 <span class="comment"> * COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,<\/span>$/;"	a	language:HTML
+l00020	.\doc\html\ls__log_8h-source.html	/^<a name="l00020"><\/a>00020 <span class="comment"> * COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,<\/span>$/;"	a	language:HTML
+l00021	.\doc\html\ls__common_8h-source.html	/^<a name="l00021"><\/a>00021 <span class="comment"> * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,<\/span>$/;"	a	language:HTML
+l00021	.\doc\html\ls__log_8h-source.html	/^<a name="l00021"><\/a>00021 <span class="comment"> * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,<\/span>$/;"	a	language:HTML
+l00022	.\doc\html\ls__common_8h-source.html	/^<a name="l00022"><\/a>00022 <span class="comment"> * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<\/span>$/;"	a	language:HTML
+l00022	.\doc\html\ls__log_8h-source.html	/^<a name="l00022"><\/a>00022 <span class="comment"> * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<\/span>$/;"	a	language:HTML
+l00023	.\doc\html\ls__common_8h-source.html	/^<a name="l00023"><\/a>00023 <span class="comment"> * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER<\/span>$/;"	a	language:HTML
+l00023	.\doc\html\ls__log_8h-source.html	/^<a name="l00023"><\/a>00023 <span class="comment"> * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER<\/span>$/;"	a	language:HTML
+l00024	.\doc\html\ls__common_8h-source.html	/^<a name="l00024"><\/a>00024 <span class="comment"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT<\/span>$/;"	a	language:HTML
+l00024	.\doc\html\ls__log_8h-source.html	/^<a name="l00024"><\/a>00024 <span class="comment"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT<\/span>$/;"	a	language:HTML
+l00025	.\doc\html\ls__common_8h-source.html	/^<a name="l00025"><\/a>00025 <span class="comment"> * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN<\/span>$/;"	a	language:HTML
+l00025	.\doc\html\ls__log_8h-source.html	/^<a name="l00025"><\/a>00025 <span class="comment"> * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN<\/span>$/;"	a	language:HTML
+l00026	.\doc\html\ls__common_8h-source.html	/^<a name="l00026"><\/a>00026 <span class="comment"> * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<\/span>$/;"	a	language:HTML
+l00026	.\doc\html\ls__log_8h-source.html	/^<a name="l00026"><\/a>00026 <span class="comment"> * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<\/span>$/;"	a	language:HTML
+l00027	.\doc\html\ls__common_8h-source.html	/^<a name="l00027"><\/a>00027 <span class="comment"> * POSSIBILITY OF SUCH DAMAGE.<\/span>$/;"	a	language:HTML
+l00027	.\doc\html\ls__log_8h-source.html	/^<a name="l00027"><\/a>00027 <span class="comment"> * POSSIBILITY OF SUCH DAMAGE.<\/span>$/;"	a	language:HTML
+l00028	.\doc\html\ls__common_8h-source.html	/^<a name="l00028"><\/a>00028 <span class="comment"> *\/<\/span>$/;"	a	language:HTML
+l00028	.\doc\html\ls__log_8h-source.html	/^<a name="l00028"><\/a>00028 <span class="comment"> *\/<\/span>$/;"	a	language:HTML
+l00029	.\doc\html\ls__common_8h-source.html	/^<a name="l00029"><\/a>00029 <span class="preprocessor">#ifndef __LS_COMMON_HEADER_H__<\/span>$/;"	a	language:HTML
+l00029	.\doc\html\ls__log_8h-source.html	/^<a name="l00029"><\/a>00029 <span class="preprocessor">#ifndef __LS_LOG_HEADER_H__<\/span>$/;"	a	language:HTML
+l00030	.\doc\html\ls__common_8h-source.html	/^<a name="l00030"><\/a>00030 <span class="preprocessor"><\/span><span class="preprocessor">#define __LS_COMMON_HEADER_H__<\/span>$/;"	a	language:HTML
+l00030	.\doc\html\ls__log_8h-source.html	/^<a name="l00030"><\/a>00030 <span class="preprocessor"><\/span><span class="preprocessor">#define __LS_LOG_HEADER_H__<\/span>$/;"	a	language:HTML
+l00031	.\doc\html\ls__common_8h-source.html	/^<a name="l00031"><\/a>00031 <span class="preprocessor"><\/span>$/;"	a	language:HTML
+l00031	.\doc\html\ls__log_8h-source.html	/^<a name="l00031"><\/a>00031 <span class="preprocessor"><\/span>$/;"	a	language:HTML
+l00032	.\doc\html\ls__common_8h-source.html	/^<a name="l00032"><\/a><a class="code" href="ls__common_8h.html#9d61eebd439dd17e54d3fe3a6ca1eb0a">00032<\/a> <span class="preprocessor">#define UNUSED_PARAM(arg) { (arg); }<\/span>$/;"	a	language:HTML
+l00032	.\doc\html\ls__log_8h-source.html	/^<a name="l00032"><\/a>00032 <span class="preprocessor">#ifdef __cplusplus<\/span>$/;"	a	language:HTML
+l00033	.\doc\html\ls__common_8h-source.html	/^<a name="l00033"><\/a><a class="code" href="ls__common_8h.html#13aaf9e9e194ebfd84f90bcf4e264aca">00033<\/a> <span class="preprocessor"><\/span><span class="preprocessor">#define countof(x)        (sizeof((x)) \/ sizeof(*(x)))<\/span>$/;"	a	language:HTML
+l00033	.\doc\html\ls__log_8h-source.html	/^<a name="l00033"><\/a>00033 <span class="preprocessor"><\/span><span class="keyword">extern<\/span> <span class="stringliteral">"C"<\/span> {$/;"	a	language:HTML
+l00034	.\doc\html\ls__common_8h-source.html	/^<a name="l00034"><\/a>00034 <span class="preprocessor"><\/span>$/;"	a	language:HTML
+l00034	.\doc\html\ls__log_8h-source.html	/^<a name="l00034"><\/a>00034 <span class="preprocessor">#endif<\/span>$/;"	a	language:HTML
+l00035	.\doc\html\ls__common_8h-source.html	/^<a name="l00035"><\/a><a class="code" href="ls__common_8h.html#c35c7581b5b758757ab1c1adfcc5d303">00035<\/a> <span class="preprocessor">#define LS_ERROR_LEN      (-1)    <\/span>$/;"	a	language:HTML
+l00035	.\doc\html\ls__log_8h-source.html	/^<a name="l00035"><\/a>00035 <span class="preprocessor"><\/span>$/;"	a	language:HTML
+l00036	.\doc\html\ls__common_8h-source.html	/^<a name="l00036"><\/a><a class="code" href="ls__common_8h.html#e726b32bb2d21fa47aefe1ccd7672c7e">00036<\/a> <span class="preprocessor">#define LS_BUFFERLEN_DEF  (1024)  <\/span>$/;"	a	language:HTML
+l00036	.\doc\html\ls__log_8h-source.html	/^<a name="l00036"><\/a>00036 $/;"	a	language:HTML
+l00041	.\doc\html\ls__log_8h-source.html	/^<a name="l00041"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff">00041<\/a> <span class="keyword">enum<\/span> <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff" title="display type of log information">LS_DisplayType<\/a> {$/;"	a	language:HTML
+l00042	.\doc\html\ls__log_8h-source.html	/^<a name="l00042"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395">00042<\/a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffb687feff52c7e57bcd5498aa27964395">Display_Console<\/a>   = 0, $/;"	a	language:HTML
+l00043	.\doc\html\ls__common_8h-source.html	/^<a name="l00043"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294">00043<\/a> <span class="preprocessor">enum LS_ResultType {<\/span>$/;"	a	language:HTML
+l00043	.\doc\html\ls__log_8h-source.html	/^<a name="l00043"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c">00043<\/a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c">Display_GUI<\/a>       = 1, $/;"	a	language:HTML
+l00044	.\doc\html\ls__common_8h-source.html	/^<a name="l00044"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d">00044<\/a> <span class="preprocessor"><\/span>  <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d">LS_Success<\/a>                    = 0, $/;"	a	language:HTML
+l00044	.\doc\html\ls__log_8h-source.html	/^<a name="l00044"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe">00044<\/a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff30ade227fb2a331c7da5af402c75bdbe">Display_File<\/a>      = 2, $/;"	a	language:HTML
+l00045	.\doc\html\ls__common_8h-source.html	/^<a name="l00045"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47">00045<\/a>   <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294257accdb3036251b60af2e1123491e47">LS_Failed<\/a>                     = 1, $/;"	a	language:HTML
+l00045	.\doc\html\ls__log_8h-source.html	/^<a name="l00045"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168">00045<\/a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff022a8b8d12f3d20b01e19c147dcc2168">Display_Database<\/a>  = 3, $/;"	a	language:HTML
+l00046	.\doc\html\ls__common_8h-source.html	/^<a name="l00046"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf">00046<\/a>   <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc2940288571077076b4e57f71386b8c899bf">LS_Failed_InvalidParameters<\/a>   = 2, $/;"	a	language:HTML
+l00046	.\doc\html\ls__log_8h-source.html	/^<a name="l00046"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813">00046<\/a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813">Display_Network<\/a>   = 4, $/;"	a	language:HTML
+l00047	.\doc\html\ls__common_8h-source.html	/^<a name="l00047"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733">00047<\/a>   <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294de872573256cf3110a60274b11c9d733">LS_Failed_LoadConfig<\/a>          = 3, $/;"	a	language:HTML
+l00048	.\doc\html\ls__common_8h-source.html	/^<a name="l00048"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114">00048<\/a>   <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294d8c0f7648e8341e29705d6a316ff4114">LS_Failed_CreateSeverityArray<\/a> = 4, $/;"	a	language:HTML
+l00048	.\doc\html\ls__log_8h-source.html	/^<a name="l00048"><\/a><a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300">00048<\/a>   <a class="code" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff72502944093595c85e15e4c4182eb300">Display_Count<\/a>     = 5, $/;"	a	language:HTML
+l00049	.\doc\html\ls__common_8h-source.html	/^<a name="l00049"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1">00049<\/a>   <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294e5bfe1eb4df8e4db6425f2d67f06c8f1">LS_Failed_CreateModulesArray<\/a>  = 5, $/;"	a	language:HTML
+l00049	.\doc\html\ls__log_8h-source.html	/^<a name="l00049"><\/a>00049 };$/;"	a	language:HTML
+l00050	.\doc\html\ls__common_8h-source.html	/^<a name="l00050"><\/a><a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a">00050<\/a>   <a class="code" href="ls__common_8h.html#433137003dfe602c2d40334af42bc294fe2d542e4bced48665ff78b0c2d6178a">LS_Failed_CreateWriteLog<\/a>      = 6, $/;"	a	language:HTML
+l00051	.\doc\html\ls__common_8h-source.html	/^<a name="l00051"><\/a>00051 };$/;"	a	language:HTML
+l00052	.\doc\html\ls__common_8h-source.html	/^<a name="l00052"><\/a>00052 $/;"	a	language:HTML
+l00053	.\doc\html\ls__common_8h-source.html	/^<a name="l00053"><\/a>00053 <span class="preprocessor">#endif  <\/span><span class="comment">\/* __LS_COMMON_HEADER_H__ *\/<\/span>$/;"	a	language:HTML
+l00054	.\doc\html\ls__log_8h-source.html	/^<a name="l00054"><\/a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2">00054<\/a> <span class="keyword">enum<\/span> <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2" title="severity type of log information">LS_SeverityType<\/a> {$/;"	a	language:HTML
+l00055	.\doc\html\ls__log_8h-source.html	/^<a name="l00055"><\/a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f">00055<\/a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f">Severity_Debug<\/a>    = 0, $/;"	a	language:HTML
+l00056	.\doc\html\ls__log_8h-source.html	/^<a name="l00056"><\/a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19">00056<\/a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19">Severity_Message<\/a>  = 1, $/;"	a	language:HTML
+l00057	.\doc\html\ls__log_8h-source.html	/^<a name="l00057"><\/a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8">00057<\/a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8">Severity_Warning<\/a>  = 2, $/;"	a	language:HTML
+l00058	.\doc\html\ls__log_8h-source.html	/^<a name="l00058"><\/a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf">00058<\/a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e27c600d44be78a924edee8db9bbce7bdf">Severity_Error<\/a>    = 3, $/;"	a	language:HTML
+l00060	.\doc\html\ls__log_8h-source.html	/^<a name="l00060"><\/a><a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b">00060<\/a>   <a class="code" href="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b">Severity_Count<\/a>    = 4, $/;"	a	language:HTML
+l00061	.\doc\html\ls__log_8h-source.html	/^<a name="l00061"><\/a>00061 };$/;"	a	language:HTML
+l00062	.\doc\html\ls__log_8h-source.html	/^<a name="l00062"><\/a>00062 $/;"	a	language:HTML
+l00068	.\doc\html\ls__log_8h-source.html	/^<a name="l00068"><\/a>00068 <span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="ls__log_8h.html#fb5cdceb6582f96fdaca92a16a1878b8">ls_init<\/a>(<span class="keywordtype">void<\/span>);     $/;"	a	language:HTML
+l00069	.\doc\html\ls__log_8h-source.html	/^<a name="l00069"><\/a>00069 <span class="keyword">extern<\/span> <span class="keywordtype">void<\/span> <a class="code" href="ls__log_8h.html#f7ea81c291c80d4dd882990400631904">ls_uninit<\/a>(<span class="keywordtype">void<\/span>);  $/;"	a	language:HTML
+l00084	.\doc\html\ls__log_8h-source.html	/^<a name="l00084"><\/a>00084 <span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="ls__log_8h.html#5f71f133471845639c421140b7293aae">ls_logx<\/a>(<span class="keywordtype">int<\/span> display, <span class="keywordtype">int<\/span> severity, <span class="keywordtype">int<\/span> module, <span class="keywordtype">char<\/span>* file, <span class="keywordtype">char<\/span>* func, <span class="keywordtype">int<\/span> line, <span class="keyword">const<\/span> <span class="keywordtype">char<\/span>* fmt, ...);$/;"	a	language:HTML
+l00085	.\doc\html\ls__log_8h-source.html	/^<a name="l00085"><\/a>00085 <span class="preprocessor">#if _WIN32 || _WIN64<\/span>$/;"	a	language:HTML
+l00086	.\doc\html\ls__log_8h-source.html	/^<a name="l00086"><\/a>00086 <span class="preprocessor"><\/span><span class="preprocessor">  #ifdef LS_LOG_ON<\/span>$/;"	a	language:HTML
+l00087	.\doc\html\ls__log_8h-source.html	/^<a name="l00087"><\/a>00087 <span class="preprocessor"><\/span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)<\/span>$/;"	a	language:HTML
+l00088	.\doc\html\ls__log_8h-source.html	/^<a name="l00088"><\/a>00088 <span class="preprocessor"><\/span><span class="preprocessor">  #else<\/span>$/;"	a	language:HTML
+l00089	.\doc\html\ls__log_8h-source.html	/^<a name="l00089"><\/a>00089 <span class="preprocessor"><\/span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)<\/span>$/;"	a	language:HTML
+l00090	.\doc\html\ls__log_8h-source.html	/^<a name="l00090"><\/a>00090 <span class="preprocessor"><\/span><span class="preprocessor">  #endif<\/span>$/;"	a	language:HTML
+l00091	.\doc\html\ls__log_8h-source.html	/^<a name="l00091"><\/a>00091 <span class="preprocessor"><\/span><span class="preprocessor">#else<\/span>$/;"	a	language:HTML
+l00092	.\doc\html\ls__log_8h-source.html	/^<a name="l00092"><\/a>00092 <span class="preprocessor"><\/span><span class="preprocessor">  #ifdef LS_LOG_ON<\/span>$/;"	a	language:HTML
+l00093	.\doc\html\ls__log_8h-source.html	/^<a name="l00093"><\/a>00093 <span class="preprocessor"><\/span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)<\/span>$/;"	a	language:HTML
+l00094	.\doc\html\ls__log_8h-source.html	/^<a name="l00094"><\/a>00094 <span class="preprocessor"><\/span><span class="preprocessor">  #else<\/span>$/;"	a	language:HTML
+l00095	.\doc\html\ls__log_8h-source.html	/^<a name="l00095"><\/a><a class="code" href="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe">00095<\/a> <span class="preprocessor"><\/span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)<\/span>$/;"	a	language:HTML
+l00096	.\doc\html\ls__log_8h-source.html	/^<a name="l00096"><\/a>00096 <span class="preprocessor"><\/span><span class="preprocessor">  #endif<\/span>$/;"	a	language:HTML
+l00097	.\doc\html\ls__log_8h-source.html	/^<a name="l00097"><\/a>00097 <span class="preprocessor"><\/span><span class="preprocessor">#endif<\/span>$/;"	a	language:HTML
+l00098	.\doc\html\ls__log_8h-source.html	/^<a name="l00098"><\/a>00098 <span class="preprocessor"><\/span>$/;"	a	language:HTML
+l00099	.\doc\html\ls__log_8h-source.html	/^<a name="l00099"><\/a>00099 <span class="preprocessor">#ifdef __cplusplus<\/span>$/;"	a	language:HTML
+l00100	.\doc\html\ls__log_8h-source.html	/^<a name="l00100"><\/a>00100 <span class="preprocessor"><\/span>}$/;"	a	language:HTML
+l00101	.\doc\html\ls__log_8h-source.html	/^<a name="l00101"><\/a>00101 <span class="preprocessor">#endif<\/span>$/;"	a	language:HTML
+l00102	.\doc\html\ls__log_8h-source.html	/^<a name="l00102"><\/a>00102 <span class="preprocessor"><\/span>$/;"	a	language:HTML
+l00103	.\doc\html\ls__log_8h-source.html	/^<a name="l00103"><\/a>00103 <span class="preprocessor">#endif  <\/span><span class="comment">\/* __LS_LOG_HEADER_H__ *\/<\/span>$/;"	a	language:HTML
 lbuffer	.\src\ls_circularbuffer.c	/^  struct ls_Buffer* lbuffer;  \/*!< ƒ⁄¥Êª∫≥Â«¯   *\/$/;"	m	language:C	struct:ls_CircularBuffer	typeref:struct:ls_CircularBuffer::ls_Buffer	file:
 lbuffer	.\test\ls_test_buffer.c	/^  struct ls_Buffer* lbuffer;$/;"	m	language:C	struct:TransNoLock	typeref:struct:TransNoLock::ls_Buffer	file:
 lbuffer	.\test\ls_test_buffer.c	/^  struct ls_Buffer* lbuffer;$/;"	m	language:C	struct:TransWithLock	typeref:struct:TransWithLock::ls_Buffer	file:
@@ -242,10 +427,12 @@ ls_lockOn	.\src\ls_lock.c	/^void ls_lockOn(struct ls_Lock* self)$/;"	f	language:
 ls_lockOn	.\src\ls_lock.h	/^extern void ls_lockOn(struct ls_Lock* self);$/;"	p	language:C++	signature:(struct ls_Lock* self)
 ls_lockRelease	.\src\ls_lock.c	/^void ls_lockRelease(struct ls_Lock** self)$/;"	f	language:C	signature:(struct ls_Lock** self)
 ls_lockRelease	.\src\ls_lock.h	/^extern void ls_lockRelease(struct ls_Lock** self);$/;"	p	language:C++	signature:(struct ls_Lock** self)
-ls_log	.\inc\ls_log.h	87;"	d	language:C++
-ls_log	.\inc\ls_log.h	89;"	d	language:C++
-ls_log	.\inc\ls_log.h	93;"	d	language:C++
+ls_log	.\inc\ls_log.h	101;"	d	language:C++
+ls_log	.\inc\ls_log.h	103;"	d	language:C++
+ls_log	.\inc\ls_log.h	88;"	d	language:C++
+ls_log	.\inc\ls_log.h	90;"	d	language:C++
 ls_log	.\inc\ls_log.h	95;"	d	language:C++
+ls_log	.\inc\ls_log.h	97;"	d	language:C++
 ls_logCreate	.\src\ls_log.c	/^static struct ls_Log* ls_logCreate(void)$/;"	f	language:C	file:	signature:(void)
 ls_logCreateModules	.\src\ls_log.c	/^static int ls_logCreateModules(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
 ls_logInit	.\src\ls_log.c	/^static int ls_logInit(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
@@ -254,6 +441,8 @@ ls_logReleaseModules	.\src\ls_log.c	/^static void ls_logReleaseModules(struct ls
 ls_logUninit	.\src\ls_log.c	/^static void ls_logUninit(struct ls_Log* self)$/;"	f	language:C	file:	signature:(struct ls_Log* self)
 ls_logx	.\inc\ls_log.h	/^extern int ls_logx(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...);$/;"	p	language:C++	signature:(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...)
 ls_logx	.\src\ls_log.c	/^int ls_logx(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...)$/;"	f	language:C	signature:(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...)
+ls_logx_normal	.\inc\ls_log.h	/^extern int ls_logx_normal(int display, int severity, int module, const char* fmt, ...);$/;"	p	language:C++	signature:(int display, int severity, int module, const char* fmt, ...)
+ls_logx_normal	.\src\ls_log.c	/^int ls_logx_normal(int display, int severity, int module, const char* fmt, ...)$/;"	f	language:C	signature:(int display, int severity, int module, const char* fmt, ...)
 ls_mkdir	.\src\ls_writefile.c	/^static int ls_mkdir(const char* module, const char* monthDir, const char* dayDir)$/;"	f	language:C	file:	signature:(const char* module, const char* monthDir, const char* dayDir)
 ls_test	.\test\ls_test.c	/^struct ls_test {$/;"	s	language:C	file:
 ls_test	.\test\ls_test.h	/^extern void ls_test(const char* cmd);$/;"	p	language:C++	signature:(const char* cmd)

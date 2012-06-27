@@ -1,6 +1,7 @@
 LIBRARY "ls-log"
 
 EXPORTS
-  ls_init   @1
-  ls_uninit @2
-  ls_logx   @3
+  ls_init         @1
+  ls_uninit       @2
+  ls_logx         @3
+  ls_logx_normal  @4

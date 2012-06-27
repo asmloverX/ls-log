@@ -5,8 +5,8 @@
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = GBK
 PROJECT_NAME           = ls-log
-PROJECT_NUMBER         = v0.1
-OUTPUT_DIRECTORY       = E:/Samples/ls-log-0.1/doc
+PROJECT_NUMBER         = v0.1.1
+OUTPUT_DIRECTORY       = E:/Projects/ls-log/doc
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = Chinese
 BRIEF_MEMBER_DESC      = YES
@@ -51,13 +51,13 @@ TYPEDEF_HIDES_STRUCT   = NO
 # Build related configuration options
 #---------------------------------------------------------------------------
 EXTRACT_ALL            = YES
-EXTRACT_PRIVATE        = NO
-EXTRACT_STATIC         = NO
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
 EXTRACT_LOCAL_CLASSES  = YES
 EXTRACT_LOCAL_METHODS  = NO
 EXTRACT_ANON_NSPACES   = NO
-HIDE_UNDOC_MEMBERS     = YES
-HIDE_UNDOC_CLASSES     = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
 HIDE_FRIEND_COMPOUNDS  = NO
 HIDE_IN_BODY_DOCS      = NO
 INTERNAL_DOCS          = NO
@@ -93,7 +93,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = E:/Samples/ls-log-0.1/inc
+INPUT                  = E:/Projects/ls-log/inc
 INPUT_ENCODING         = GBK
 FILE_PATTERNS          = *.c \
                          *.cc \
@@ -144,11 +144,11 @@ FILTER_SOURCE_FILES    = NO
 SOURCE_BROWSER         = YES
 INLINE_SOURCES         = NO
 STRIP_CODE_COMMENTS    = YES
-REFERENCED_BY_RELATION = NO
-REFERENCES_RELATION    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
 REFERENCES_LINK_SOURCE = YES
 USE_HTAGS              = NO
-VERBATIM_HEADERS       = NO
+VERBATIM_HEADERS       = YES
 #---------------------------------------------------------------------------
 # configuration options related to the alphabetical class index
 #---------------------------------------------------------------------------
@@ -170,7 +170,7 @@ GENERATE_DOCSET        = NO
 DOCSET_FEEDNAME        = "Doxygen generated docs"
 DOCSET_BUNDLE_ID       = org.doxygen.Project
 HTML_DYNAMIC_SECTIONS  = NO
-CHM_FILE               = ls-log-0.1.chm
+CHM_FILE               = "ls-log reference.chm"
 HHC_LOCATION           = "C:/Program Files/HTML Help Workshop/hhc.exe"
 GENERATE_CHI           = NO
 CHM_INDEX_ENCODING     = GBK

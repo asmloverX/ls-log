@@ -67,27 +67,36 @@
 <a name="l00068"></a>00068 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ls__log_8h.html#fb5cdceb6582f96fdaca92a16a1878b8">ls_init</a>(<span class="keywordtype">void</span>);     
 <a name="l00069"></a>00069 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ls__log_8h.html#f7ea81c291c80d4dd882990400631904">ls_uninit</a>(<span class="keywordtype">void</span>);  
 <a name="l00084"></a>00084 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ls__log_8h.html#5f71f133471845639c421140b7293aae">ls_logx</a>(<span class="keywordtype">int</span> display, <span class="keywordtype">int</span> severity, <span class="keywordtype">int</span> module, <span class="keywordtype">char</span>* file, <span class="keywordtype">char</span>* func, <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);
-<a name="l00085"></a>00085 <span class="preprocessor">#if _WIN32 || _WIN64</span>
-<a name="l00086"></a>00086 <span class="preprocessor"></span><span class="preprocessor">  #ifdef LS_LOG_ON</span>
-<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)</span>
-<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">  #else</span>
-<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="preprocessor">  #endif</span>
-<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="preprocessor">  #ifdef LS_LOG_ON</span>
-<a name="l00093"></a>00093 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)</span>
-<a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">  #else</span>
-<a name="l00095"></a><a class="code" href="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe">00095</a> <span class="preprocessor"></span><span class="preprocessor">    #define ls_log(display, severity, module, fmt, ...)</span>
-<a name="l00096"></a>00096 <span class="preprocessor"></span><span class="preprocessor">  #endif</span>
-<a name="l00097"></a>00097 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00098"></a>00098 <span class="preprocessor"></span>
-<a name="l00099"></a>00099 <span class="preprocessor">#ifdef __cplusplus</span>
-<a name="l00100"></a>00100 <span class="preprocessor"></span>}
-<a name="l00101"></a>00101 <span class="preprocessor">#endif</span>
-<a name="l00102"></a>00102 <span class="preprocessor"></span>
-<a name="l00103"></a>00103 <span class="preprocessor">#endif  </span><span class="comment">/* __LS_LOG_HEADER_H__ */</span>
+<a name="l00085"></a>00085 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ls__log_8h.html#c62193c9a27481d72fa4df27ad3fcb5e">ls_logx_normal</a>(<span class="keywordtype">int</span> display, <span class="keywordtype">int</span> severity, <span class="keywordtype">int</span> module, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);
+<a name="l00086"></a>00086 <span class="preprocessor">#if !defined(__VA_ARGS__) || (defined(_MSC_VER) &amp;&amp; (_MSC_VER &lt; 1400))</span>
+<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">  #ifdef LS_LOG_ON</span>
+<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">    #define ls_log  ls_logx_normal</span>
+<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">  #else</span>
+<a name="l00090"></a><a class="code" href="ls__log_8h.html#10e3edf5ffa75c7ab598466125f4572c">00090</a> <span class="preprocessor"></span><span class="preprocessor">    #define ls_log</span>
+<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">  #endif</span>
+<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00093"></a>00093 <span class="preprocessor"></span><span class="preprocessor">  #if _WIN32 || _WIN64</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">    #if defined(LS_LOG_ON)</span>
+<a name="l00095"></a>00095 <span class="preprocessor"></span><span class="preprocessor">      #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)</span>
+<a name="l00096"></a>00096 <span class="preprocessor"></span><span class="preprocessor">    #else</span>
+<a name="l00097"></a>00097 <span class="preprocessor"></span><span class="preprocessor">      #define ls_log(display, severity, module, fmt, ...)</span>
+<a name="l00098"></a>00098 <span class="preprocessor"></span><span class="preprocessor">    #endif</span>
+<a name="l00099"></a>00099 <span class="preprocessor"></span><span class="preprocessor">  #else</span>
+<a name="l00100"></a>00100 <span class="preprocessor"></span><span class="preprocessor">    #ifdef LS_LOG_ON</span>
+<a name="l00101"></a>00101 <span class="preprocessor"></span><span class="preprocessor">      #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)</span>
+<a name="l00102"></a>00102 <span class="preprocessor"></span><span class="preprocessor">    #else</span>
+<a name="l00103"></a>00103 <span class="preprocessor"></span><span class="preprocessor">      #define ls_log(display, severity, module, fmt, ...)</span>
+<a name="l00104"></a>00104 <span class="preprocessor"></span><span class="preprocessor">    #endif</span>
+<a name="l00105"></a>00105 <span class="preprocessor"></span><span class="preprocessor">  #endif</span>
+<a name="l00106"></a>00106 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00107"></a>00107 <span class="preprocessor"></span>
+<a name="l00108"></a>00108 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00109"></a>00109 <span class="preprocessor"></span>}
+<a name="l00110"></a>00110 <span class="preprocessor">#endif</span>
+<a name="l00111"></a>00111 <span class="preprocessor"></span>
+<a name="l00112"></a>00112 <span class="preprocessor">#endif  </span><span class="comment">/* __LS_LOG_HEADER_H__ */</span>
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated at Tue Jun 26 10:13:42 2012 for ls-log by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated at Wed Jun 27 12:39:46 2012 for ls-log by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
 </body>

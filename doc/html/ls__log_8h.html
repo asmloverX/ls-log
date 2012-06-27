@@ -19,7 +19,7 @@
 <a href="ls__log_8h-source.html">浏览该文件的源代码。</a><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>宏定义</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe">ls_log</a>(display, severity, module, fmt,...)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#10e3edf5ffa75c7ab598466125f4572c">ls_log</a></td></tr>
 
 <tr><td colspan="2"><br><h2>枚举</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff">LS_DisplayType</a> { <br>
@@ -52,31 +52,16 @@
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#5f71f133471845639c421140b7293aae">ls_logx</a> (int display, int severity, int module, char *file, char *func, int line, const char *fmt,...)</td></tr>
 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ls__log_8h.html#c62193c9a27481d72fa4df27ad3fcb5e">ls_logx_normal</a> (int display, int severity, int module, const char *fmt,...)</td></tr>
+
 </table>
 <hr><h2>宏定义文档</h2>
-<a class="anchor" name="d15c6cf968b60858414f50826b47efbe"></a><!-- doxytag: member="ls_log.h::ls_log" ref="d15c6cf968b60858414f50826b47efbe" args="(display, severity, module, fmt,...)" -->
+<a class="anchor" name="10e3edf5ffa75c7ab598466125f4572c"></a><!-- doxytag: member="ls_log.h::ls_log" ref="10e3edf5ffa75c7ab598466125f4572c" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define ls_log          </td>
-          <td>(</td>
-          <td class="paramtype">display,         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">severity,         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">module,         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">fmt,         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"> <em>...</em>&nbsp;</td>
-          <td class="paramname">          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
         </tr>
       </table>
 </div>
@@ -84,7 +69,7 @@
 
 <p>
 
-<p>在文件<a class="el" href="ls__log_8h-source.html">ls_log.h</a>第<a class="el" href="ls__log_8h-source.html#l00095">95</a>行定义。</p>
+<p>在文件<a class="el" href="ls__log_8h-source.html">ls_log.h</a>第<a class="el" href="ls__log_8h-source.html#l00090">90</a>行定义。</p>
 
 </div>
 </div><p>
@@ -251,6 +236,53 @@ error informations </td></tr>
 
 </div>
 </div><p>
+<a class="anchor" name="c62193c9a27481d72fa4df27ad3fcb5e"></a><!-- doxytag: member="ls_log.h::ls_logx_normal" ref="c62193c9a27481d72fa4df27ad3fcb5e" args="(int display, int severity, int module, const char *fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ls_logx_normal           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
 <a class="anchor" name="f7ea81c291c80d4dd882990400631904"></a><!-- doxytag: member="ls_log.h::ls_uninit" ref="f7ea81c291c80d4dd882990400631904" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +304,7 @@ uninitialize logging system
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated at Tue Jun 26 10:13:42 2012 for ls-log by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated at Wed Jun 27 12:39:46 2012 for ls-log by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
 </body>

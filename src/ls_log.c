@@ -275,3 +275,43 @@ int ls_logx(int display, int severity, int module, char* file, char* func, int l
   }
   return LS_Failed_InvalidParameters;
 }
+
+int ls_logx_normal(int display, int severity, int module, const char* fmt, ...)
+{
+  if (NULL == g_sLog)
+  {
+    if (LS_Failed == ls_init())
+      return LS_Failed;
+  }
+
+  if (Display_Console <= display && display < Display_Count && Severity_Debug <= severity 
+    && severity < Severity_Count && 0 <= module && module < ls_arraySize(g_sLog->logModules) && NULL != fmt)
+  {
+    struct ls_LogBuffer llbuf;
+    struct ls_LogTime   ltime;
+    va_list ap;
+    size_t  len;
+    struct ls_SeverityBuffer* lsbuffer;
+
+    ls_getLogTime(&ltime);
+    llbuf.displayType = (unsigned char)display;
+    llbuf.level       = (unsigned char)severity;
+    llbuf.moduleIndex = (unsigned short)module;
+    __log_snprintf(llbuf.message, sizeof(llbuf.message), "[%02d:%02d:%02d:%03d] : ", 
+        ltime.hour, ltime.min, ltime.sec, ltime.millitm);
+    len = strlen(llbuf.message);
+    va_start(ap, fmt);
+    __log_vsnprintf(llbuf.message + len, sizeof(llbuf.message) - len, fmt, ap);
+    va_end(ap);
+
+    lsbuffer = (struct ls_SeverityBuffer*)ls_arrayGet(g_sLog->severityBuffers, severity);
+    if (NULL != lsbuffer)
+    {
+      ls_circularBufferPush(lsbuffer->buffer, &llbuf);
+      return LS_Success;
+    }
+
+    return LS_Failed;
+  }
+  return LS_Failed_InvalidParameters;
+}

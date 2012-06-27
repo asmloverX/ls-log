@@ -1,4 +1,4 @@
-README for ls-log 0.1
+README for ls-log 0.1.1
 =====================
 
 
@@ -21,28 +21,49 @@ README for ls-log 0.1
 
 * 编译ls-log
   ----------
-  建议使用MSVC8.0及以上的版本进行编译
+  建议使用MSVC8.0及以上的版本进行编译(MSVC7.1也可进行编译
+  但MSVC7.1自身不支持__VA_ARGS__)
 
   1. 编译带测试的工程
      进入ls-log目录
-     > cd ls-log-0.1
-     ls-log-0.1 > nmake           # 编译
-     ls-log-0.1 > ls-log.exe      # 可以根据提示对该工程的各个接口进行测试
+     > cd ls-log
+     ls-log > nmake           # 编译
+     ls-log > ls-log.exe      # 可以根据提示对该工程的各个接口进行测试
 
   2. 编译成静态库
      进入ls-log目录
-     > cd ls-log-0.1
-     ls-log-0.1 > nmake /f makefile-lib.mk
+     > cd ls-log
+     ls-log > nmake /f makefile-lib.mk
 
   3. 编译成动态库
      进入ls-log目录
-     > cd ls-log-0.1
-     ls-log-0.1 > nmake /f makefile-dll.mk
+     > cd ls-log
+     ls-log > nmake /f makefile-dll.mk
   
   4. 编译ls-log动态库(静态库)使用demo
      进入demo目录
-     > cd ls-log-0.1/demo
-     ls-log-0.1/demo > nmake
+     > cd ls-log/demo
+     ls-log/demo > nmake
+
+  5. 使用MSVC7.1编译带测试的工程
+     进入ls-log目录
+     > cd ls-log
+     ls-log > nmake /f makefile-msvc7.1.mk
+
+  6. 使用MSVC7.1编译成静态库
+     进入ls-log目录
+     > cd ls-log
+     ls-log > nmake /f makefile-lib-msvc7.1.mk
+
+  7. 使用MSVC7.1编译成动态库
+     进入ls-log目录
+     > cd ls-log
+     ls-log > nmake /f makefile-dll-msvc7.1.mk
+
+  8. 使用MSVC7.1编译ls-log动态库(静态库)使用demo
+     进入demo目录
+     > cd ls-log/demo
+     ls-log/demo > nmake /f makefile-msvc7.1.mk
 
 
 * 使用ls-log
@@ -64,7 +85,7 @@ README for ls-log 0.1
   退出之前调用ls_uninit
   需要打印日志的地方调用ls_log
 
-  具体的使用例子请参见./ls-log-0.1/demo/main.c
+  具体的使用例子请参见./ls-log/demo/main.c
 
 
 (end of README)

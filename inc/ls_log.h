@@ -82,17 +82,26 @@ extern void ls_uninit(void);  /*!< uninitialize logging system */
  *!   ls_log(Display_File, Severity_Message, 0, "This is log message test, value = %d\n", value);
  */
 extern int ls_logx(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...);
-#if _WIN32 || _WIN64
+extern int ls_logx_normal(int display, int severity, int module, const char* fmt, ...);
+#if !defined(__VA_ARGS__) || (defined(_MSC_VER) && (_MSC_VER < 1400))
   #ifdef LS_LOG_ON
-    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)
+    #define ls_log  ls_logx_normal
   #else
-    #define ls_log(display, severity, module, fmt, ...)
+    #define ls_log
   #endif
 #else
-  #ifdef LS_LOG_ON
-    #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)
+  #if _WIN32 || _WIN64
+    #if defined(LS_LOG_ON)
+      #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)
+    #else
+      #define ls_log(display, severity, module, fmt, ...)
+    #endif
   #else
-    #define ls_log(display, severity, module, fmt, ...)
+    #ifdef LS_LOG_ON
+      #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)
+    #else
+      #define ls_log(display, severity, module, fmt, ...)
+    #endif
   #endif
 #endif
 

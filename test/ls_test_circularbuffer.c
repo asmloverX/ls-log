@@ -46,9 +46,9 @@ static void getLogBuffer(struct ls_LogBuffer* llbuf)
   SYSTEMTIME s;
 
   GetLocalTime(&s);
-  llbuf->displayType = rand() % 255;
-  llbuf->level       = rand() % 255;
-  llbuf->moduleIndex = rand() % 65535;
+  llbuf->displayType = (unsigned char)(rand() % 255);
+  llbuf->level       = (unsigned char)(rand() % 255);
+  llbuf->moduleIndex = (unsigned short)rand() % 65535;
   sprintf(llbuf->message, 
     "[%04d-%02d-%02d %02d:%02d:%02d:%03d] [displayType=>%d, level=>%d, moduleIndex=>%d]\n", 
     s.wYear, s.wMonth, s.wDay, s.wHour, s.wMinute, s.wSecond, s.wMilliseconds, 

@@ -43,8 +43,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ffc56b15ddf64cf6c292b20055aafe375c"><param name="Name" value="Display_GUI"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#9b27b472a96c7ca8767fd5b01ba416ff865916cbcb1c0ab8e7333f8f96fb7813"><param name="Name" value="Display_Network"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#fb5cdceb6582f96fdaca92a16a1878b8"><param name="Name" value="ls_init"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe"><param name="Name" value="ls_log"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#10e3edf5ffa75c7ab598466125f4572c"><param name="Name" value="ls_log"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#5f71f133471845639c421140b7293aae"><param name="Name" value="ls_logx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#c62193c9a27481d72fa4df27ad3fcb5e"><param name="Name" value="ls_logx_normal"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#f7ea81c291c80d4dd882990400631904"><param name="Name" value="ls_uninit"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b"><param name="Name" value="Severity_Count"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#8315d06030706dcda1073b2d27a243e25806779826fe3a97ae5b72d7f2e14b9f"><param name="Name" value="Severity_Debug"></OBJECT>
@@ -52,8 +53,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#8315d06030706dcda1073b2d27a243e20e9a598440fd53ec690709a28eb76d19"><param name="Name" value="Severity_Message"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2fb69de7aebe35e887ebabd383f45e1b8"><param name="Name" value="Severity_Warning"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#d15c6cf968b60858414f50826b47efbe"><param name="Name" value="ls_log"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#10e3edf5ffa75c7ab598466125f4572c"><param name="Name" value="ls_log"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#5f71f133471845639c421140b7293aae"><param name="Name" value="ls_logx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#c62193c9a27481d72fa4df27ad3fcb5e"><param name="Name" value="ls_logx_normal"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__common_8h.html#433137003dfe602c2d40334af42bc29427b2f23c9f7383bab5f71d4ed1723e4d"><param name="Name" value="LS_Success"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#f7ea81c291c80d4dd882990400631904"><param name="Name" value="ls_uninit"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="ls__log_8h.html#8315d06030706dcda1073b2d27a243e2909cda1ac2441116ab88eed2ddf11e6b"><param name="Name" value="Severity_Count"></OBJECT>
