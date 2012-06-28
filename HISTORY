@@ -1,14 +1,15 @@
 HISTORY for ls-log 0.1.1
+========================
 
 
 * 2010/06/27  Changes from version 0.1 to 0.1.1
   ---------------------------------------------
-  + ����û��__VA_ARGS__��ʱ�Ľӿ�
-  + ���Ӷ�MSVC7.1�ı���makefile
+  + 添加没有__VA_ARGS__宏时的接口
+  + 添加对MSVC7.1的编译makefile
 
 * 2012/06/26  Created version 0.1
   -------------------------------
-  + ����ls-log��ĵ�һ�������а汾
+  + 创建ls-log库的第一个可运行版本
 
 
 (end of HISTORY)

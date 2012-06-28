@@ -1,12 +1,15 @@
-		Change Log for ls-log Library
--------------------------------------
+ChangeLog for ls-log 0.1.1
+==========================
 
 
 Version 0.1.1				Date: 2012/06/27
 ------------------------------------
-* ���Ӳ�֧��__VA_ARGS__�ı������汾�Ľ������
-* ����ʹ��MSVC7.1�����makefile
+* 添加不支持__VA_ARGS__的编译器版本的解决方案
+* 添加使用MSVC7.1编译的makefile
 
 Version 0.1					Date: 2012/06/26
 ------------------------------------
-* ���ls-log�ĵ�һ�������а汾
+* 完成ls-log的第一个可运行版本
+
+
+(end of ChangeLog)
