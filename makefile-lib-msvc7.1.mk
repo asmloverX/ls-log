@@ -1,4 +1,4 @@
-BIN		= ls-log.lib
+BIN	= ls-log.lib
 CC	= cl -c -nologo
 CFLAG	= -O2 -W4 -MT -GS -Zi -Fd"vc.pdb" -DNDEBUG -D_CRT_SECURE_NO_DEPRECATE\
 	-D_CRT_NONSTDC_NO_WARNINGS -DLS_MT -DLS_WIN32_MT -DLS_LOG_ON
