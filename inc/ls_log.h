@@ -26,13 +26,12 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef __LS_LOG_HEADER_H__
-#define __LS_LOG_HEADER_H__
+#ifndef LITESPHINX_LOG_INCLUDED_H
+#define LITESPHINX_LOG_INCLUDED_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
 
 /*!
  *! @enum LS_DisplayType
@@ -45,7 +44,7 @@ enum LS_DisplayType {
   Display_Database  = 3, /*!< display log information to databases                 */
   Display_Network   = 4, /*!< display log information to other terminal by network */
 
-  Display_Count     = 5, 
+  Display_Count     = 5,
 };
 /*!
  *! @enum LS_SeverityType
@@ -57,26 +56,26 @@ enum LS_SeverityType {
   Severity_Warning  = 2, /*!< warning informations */
   Severity_Error    = 3, /*!< error informations   */
 
-  Severity_Count    = 4, 
+  Severity_Count    = 4,
 };
 
 /*!
  *! Usage:
- *!   ls_init - ÔÚÏµÍ³Æô¶¯µÄÊ±ºò³õÊ¼»¯Ö´ÐÐÒ»Ð©²Ù×÷, ¼ÓÔØ¶ÔÓ¦µÄ×ÊÔ´
- *!   ls_uninit - ÔÚÏµÍ³ÍË³öÖ®Ç°ÓÃÀ´»ØÊÕ×ÊÔ´
+ *!   ls_init - åœ¨ç³»ç»Ÿå¯åŠ¨çš„æ—¶å€™åˆå§‹åŒ–æ‰§è¡Œä¸€äº›æ“ä½œ, åŠ è½½å¯¹åº”çš„èµ„æº
+ *!   ls_uninit - åœ¨ç³»ç»Ÿé€€å‡ºä¹‹å‰ç”¨æ¥å›žæ”¶èµ„æº
  */
 extern int ls_init(void);     /*!< initiliaze logging system   */
 extern void ls_uninit(void);  /*!< uninitialize logging system */
 
 /*!
- *! ¼ÇÂ¼ÈÕÖ¾ÐÅÏ¢µÄ²Ù×÷½Ó¿Ú, Ê¹ÓÃ·½Ê½ÀàËÆprintfÏµÁÐµÄº¯Êý
- *! 
+ *! è®°å½•æ—¥å¿—ä¿¡æ¯çš„æ“ä½œæŽ¥å£, ä½¿ç”¨æ–¹å¼ç±»ä¼¼printfç³»åˆ—çš„å‡½æ•°
+ *!
  *! Usage:
  *!   ls_log(display, severity, module, fmt, ...)
- *!   @param [in] display: ¸ÃÈÕÖ¾ÐÅÏ¢µÄÏÔÊ¾Ä£Ê½, È¡Öµ¼ûLS_DisplayType
- *!   @param [in] severity: ¸ÃÈÕÖ¾ÐÅÏ¢µÄµÈ¼¶, È¡Öµ¼ûLS_SeverityType
- *!   @param [in] module: ¸ÃÈÕÖ¾ÐÅÏ¢ËùÊôµÄÄ£¿é, ¾ßÌåµÄÄ£¿éIDÈ¡¾öÓÚÓÃ»§×Ô¼ºÅäÖÃµÄÅäÖÃÎÄ¼þ
- *!   @param [in] fmt/...: ºóÃæµÄ²ÎÊýÊ¹ÓÃÀàËÆÓÚprintf
+ *!   @param [in] display: è¯¥æ—¥å¿—ä¿¡æ¯çš„æ˜¾ç¤ºæ¨¡å¼, å–å€¼è§LS_DisplayType
+ *!   @param [in] severity: è¯¥æ—¥å¿—ä¿¡æ¯çš„ç­‰çº§, å–å€¼è§LS_SeverityType
+ *!   @param [in] module: è¯¥æ—¥å¿—ä¿¡æ¯æ‰€å±žçš„æ¨¡å—, å…·ä½“çš„æ¨¡å—IDå–å†³äºŽç”¨æˆ·è‡ªå·±é…ç½®çš„é…ç½®æ–‡ä»¶
+ *!   @param [in] fmt/...: åŽé¢çš„å‚æ•°ä½¿ç”¨ç±»ä¼¼äºŽprintf
  *!
  *! Example:
  *!   ls_log(Display_File, Severity_Message, 0, "This is log message test, value = %d\n", value);
@@ -84,29 +83,29 @@ extern void ls_uninit(void);  /*!< uninitialize logging system */
 extern int ls_logx(int display, int severity, int module, char* file, char* func, int line, const char* fmt, ...);
 extern int ls_logx_normal(int display, int severity, int module, const char* fmt, ...);
 #if !defined(__VA_ARGS__) || (defined(_MSC_VER) && (_MSC_VER < 1400))
-  #ifdef LS_LOG_ON
-    #define ls_log  ls_logx_normal
-  #else
-    #define ls_log
-  #endif
+# if defined(LS_LOG_ON)
+#   define ls_log  ls_logx_normal
+# else
+#   define ls_log
+# endif
 #else
-  #if _WIN32 || _WIN64
-    #if defined(LS_LOG_ON)
-      #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)
-    #else
-      #define ls_log(display, severity, module, fmt, ...)
-    #endif
-  #else
-    #ifdef LS_LOG_ON
-      #define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)
-    #else
-      #define ls_log(display, severity, module, fmt, ...)
-    #endif
-  #endif
+# if defined(LS_WINDOWS)
+#   if defined(LS_LOG_ON)
+#     define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __FUNCTION__, __LINE__, (fmt), __VA_ARGS__)
+#   else
+#     define ls_log(display, severity, module, fmt, ...)
+#   endif
+# else
+#   if defined(LS_LOG_ON)
+#     define ls_log(display, severity, module, fmt, ...)   ls_logx((display), (severity), (module), __FILE__, __func__, __LINE__, (fmt), ##__VA_ARGS__)
+#   else
+#     define ls_log(display, severity, module, fmt, ...)
+#   endif
+# endif
 #endif
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  /* __LS_LOG_HEADER_H__ */
+#endif  /* LITESPHINX_LOG_INCLUDED_H */

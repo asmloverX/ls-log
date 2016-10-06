@@ -26,15 +26,24 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef __LS_COMMON_HEADER_H__
-#define __LS_COMMON_HEADER_H__
+#ifndef LITESPHINX_COMMON_INCLUDED_H
+#define LITESPHINX_COMMON_INCLUDED_H
 
-#define UNUSED_PARAM(arg) { (arg); }
+#if defined(_WIN32) || defined(_WIN64) || defined(_WINDOWS_) || defined(_MSC_VER)
+# define LS_WINDOWS
+#elif defined(__linux__)
+# define LS_LINUX
+#elif defined(__APPLE__) || defined(__MACH__)
+# define LS_DARWIN
+#else
+# error "Unsupport unknown platform !!!"
+#endif
+
+#define UNUSED_PARAM(arg) (void)arg
 #define countof(x)        (sizeof((x)) / sizeof(*(x)))
 
 #define LS_ERROR_LEN      (-1)    /*!< error length return    */
 #define LS_BUFFERLEN_DEF  (1024)  /*!< default buffer length  */
-
 
 /*!
  *! @enum LS_ResultType
@@ -50,4 +59,4 @@ enum LS_ResultType {
   LS_Failed_CreateWriteLog      = 6, /*!< failed - create ls_WriteLog failed    */
 };
 
-#endif  /* __LS_COMMON_HEADER_H__ */
+#endif  /* LITESPHINX_COMMON_INCLUDED_H */
