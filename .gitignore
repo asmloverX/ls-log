@@ -1,0 +1,11 @@
+*.swp
+*.o
+*.a
+*.so
+*.obj
+*.lib
+*.dll
+*.exe
+*.ilk
+*.exp
+*.manifest
