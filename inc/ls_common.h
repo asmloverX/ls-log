@@ -45,6 +45,11 @@
 #define LS_ERROR_LEN      (-1)    /*!< error length return    */
 #define LS_BUFFERLEN_DEF  (1024)  /*!< default buffer length  */
 
+enum LS_Boolean {
+  False = 0,
+  True,
+};
+
 /*!
  *! @enum LS_ResultType
  *! @brief Result type

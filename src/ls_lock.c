@@ -26,43 +26,66 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#if _WIN32 || _WIN64
-  #include <windows.h>
+#include "../inc/ls_common.h"
+#if defined(LS_WINDOWS)
+# include <Windows.h>
 #else
-  #include <pthread.h>
+# include <pthread.h>
 #endif
 #include <assert.h>
-
 #include "ls_lock.h"
 
+#if defined(LS_WINDOWS)
+typedef CRITICAL_SECTION kern_mutex_t;
 
-#if !defined(LS_MT)
-  #define Locker            int
-  #define Locker_Init(L)
-  #define Locker_Uninit(L)
-  #define Locker_On(L)
-  #define Locker_Off(L)
-#elif defined(LS_WIN32_MT)
-  #define Locker            CRITICAL_SECTION
-  #define Locker_Init(L)    InitializeCriticalSection(&(L))
-  #define Locker_Uninit(L)  DeleteCriticalSection(&(L))
-  #define Locker_On(L)      EnterCriticalSection(&(L))
-  #define Locker_Off(L)     LeaveCriticalSection(&(L))
-#elif defined(LS_POSIX_MT)
-  #define Locker            pthread_mutex_t
-  #define Locker_Init(L)    pthread_mutex_init(&(L), NULL)
-  #define Locker_Uninit(L)  pthread_mutex_destroy(&(L))
-  #define Locker_On(L)      pthread_mutex_lock(&(L))
-  #define Locker_Off(L)     pthread_mutex_unlock(&(L))
+void kern_mutex_init(kern_mutex_t* mtx)
+{
+  InitializeCriticalSection(mtx);
+}
+
+void kern_mutex_destroy(kern_mutex_t* mtx)
+{
+  DeleteCriticalSection(mtx);
+}
+
+void kern_mutex_lock(kern_mutex_t* mtx)
+{
+  if ((DWORD)mtx->OwningThread != GetCurrentThreadId())
+    EnterCriticalSection(mtx);
+}
+
+void kern_mutex_unlock(kern_mutex_t *mtx)
+{
+  LeaveCriticalSection(mtx);
+}
 #else
-  #error only Windows and POSIX are supported!
+typedef pthread_mutex_t kern_mutex_t;
+
+void kern_mutex_init(kern_mutex_t* mtx)
+{
+  pthread_mutex_init(mtx, NULL);
+}
+
+void kern_mutex_destroy(kern_mutex_t* mtx)
+{
+  pthread_mutex_destroy(mtx);
+}
+
+void kern_mutex_lock(kern_mutex_t* mtx)
+{
+  pthread_mutex_lock(mtx);
+}
+
+void kern_mutex_unlock(kern_mutex_t *mtx)
+{
+  pthread_mutex_unlock(mtx);
+}
 #endif
 
-
 struct ls_Lock {
-  Locker L;
+  kern_mutex_t mtx;
+  int locked;
 };
-
 
 struct ls_Lock* ls_lockCreate(void)
 {
@@ -71,7 +94,7 @@ struct ls_Lock* ls_lockCreate(void)
 
   self = (struct ls_Lock*)calloc(size, sizeof(char));
   if (NULL != self)
-    Locker_Init(self->L);
+    kern_mutex_init(&self->mtx);
 
   return self;
 }
@@ -80,7 +103,9 @@ void ls_lockRelease(struct ls_Lock** self)
 {
   if (NULL != *self)
   {
-    Locker_Uninit((*self)->L);
+    if ((*self)->locked)
+      kern_mutex_unlock(&(*self)->mtx);
+    kern_mutex_destroy(&(*self)->mtx);
     free(*self);
     *self = NULL;
   }
@@ -88,12 +113,23 @@ void ls_lockRelease(struct ls_Lock** self)
 
 void ls_lockOn(struct ls_Lock* self)
 {
-  if (NULL != self)
-    Locker_On(self->L);
+  if (NULL != self && !self->locked)
+  {
+    kern_mutex_lock(&self->mtx);
+    self->locked = True;
+  }
 }
 
 void ls_lockOff(struct ls_Lock* self)
 {
-  if (NULL != self)
-    Locker_Off(self->L);
+  if (NULL != self && self->locked)
+  {
+    kern_mutex_unlock(&self->mtx);
+    self->locked = False;
+  }
+}
+
+int ls_locked(struct ls_Lock* self)
+{
+  return (NULL != self ? self->locked : False);
 }

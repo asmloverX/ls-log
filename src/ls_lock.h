@@ -26,8 +26,8 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef __LS_LOCK_HEADER_H__
-#define __LS_LOCK_HEADER_H__
+#ifndef LITESPHINX_LOCK_INCLUDED_H
+#define LITESPHINX_LOCK_INCLUDED_H
 
 struct ls_Lock;
 
@@ -36,5 +36,6 @@ extern void ls_lockRelease(struct ls_Lock** self);
 
 extern void ls_lockOn(struct ls_Lock* self);
 extern void ls_lockOff(struct ls_Lock* self);
+extern int ls_locked(struct ls_Lock* self);
 
-#endif  /* __LS_LOCK_HEADER_H__ */
+#endif  /* LITESPHINX_LOCK_INCLUDED_H */
