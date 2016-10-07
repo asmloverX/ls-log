@@ -42,12 +42,24 @@
 #define UNUSED_PARAM(arg) (void)arg
 #define countof(x)        (sizeof((x)) / sizeof(*(x)))
 
-#define LS_ERROR_LEN      (-1)    /*!< error length return    */
-#define LS_BUFFERLEN_DEF  (1024)  /*!< default buffer length  */
+#define LS_ERROR_LEN      (-1)    /*!< error length return   */
+#define LS_BUFFERLEN_DEF  (1024)  /*!< default buffer length */
 
-enum LS_Boolean {
+typedef enum ls_boolean_t {
   False = 0,
-  True,
+  True  = 1,
+} ls_boolean_t;
+
+enum ls_error_t {
+  /* return code of functions call */
+  LS_ELEN           = -1, /* error - error length */
+  LS_OK             = 0,  /* function success */
+  LS_ERROR          = 1,  /* function failed */
+  LS_EINVALPARAM    = 2,  /* error - invalid parameters */
+  LS_ELOADCONFIG    = 3,  /* error - load configure failed */
+  LS_ECSEVERITYARR  = 4,  /* error - create severity array failed */
+  LS_ECMODULESARR   = 5,  /* error - create modules array failed */
+  LS_ECWRITELOG     = 6,  /* error - create object `ls_write_log_t` failed */
 };
 
 /*!

@@ -33,6 +33,17 @@
 extern "C" {
 #endif
 
+enum ls_display_t {
+  /* log信息输出的类型 */
+  DISPLAY_CONSOLE = 0, /* 输出到shell(控制台窗口) */
+  DISPLAY_GUI     = 1, /* 输出到GUI窗口中 */
+  DISPLAY_FILE    = 2, /* 输出到指定文件中 */
+  DISPLAY_DB      = 3, /* 输出到指定数据库看中 */
+  DISPLAY_NETWORK = 4, /* 输出到网络的另一端 */
+
+  DISPLAY_COUNT,
+};
+
 /*!
  *! @enum LS_DisplayType
  *! @brief display type of log information
@@ -46,6 +57,17 @@ enum LS_DisplayType {
 
   Display_Count     = 5,
 };
+
+enum ls_severity_t {
+  /* 日志信息的类型 */
+  SEVERITY_DEBUG  = 0,
+  SEVERITY_MSG    = 1,
+  SEVERITY_WARN   = 2,
+  SEVERITY_ERROR  = 3,
+
+  SEVERITY_COUNT,
+};
+
 /*!
  *! @enum LS_SeverityType
  *! @brief severity type of log information
@@ -58,6 +80,9 @@ enum LS_SeverityType {
 
   Severity_Count    = 4,
 };
+
+extern int ls_log_init(void);
+extern void ls_log_destroy(void);
 
 /*!
  *! Usage:
