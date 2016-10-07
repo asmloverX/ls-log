@@ -26,22 +26,19 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef __LS_ARRAY_HEADER_H__
-#define __LS_ARRAY_HEADER_H__
+#ifndef LITESPHINX_ARRARY_INCLUDED_H
+#define LITESPHINX_ARRARY_INCLUDED_H
 
-struct ls_Array;
+struct ls_array_t;
 
-extern struct ls_Array* ls_arrayCreate(int size);
-extern void ls_arrayRelease(struct ls_Array** self);
+extern struct ls_array_t* ls_array_create(int size);
+extern void ls_array_destroy(struct ls_array_t* array);
+extern void ls_array_clear(struct ls_array_t* array);
+extern int ls_array_size(struct ls_array_t* array);
+extern int ls_array_insert(struct ls_array_t* array, void* value);
+extern void* ls_array_erase(struct ls_array_t* array, int index);
+extern void* ls_array_get(struct ls_array_t* array, int index);
+extern void ls_array_set(struct ls_array_t* array, int index, void* value);
+extern int ls_array_foreach(struct ls_array_t* array, void (*visitor)(void*, void*), void* arg);
 
-extern void ls_arrayClear(struct ls_Array* self);
-extern int ls_arraySize(struct ls_Array* self);
-
-extern int ls_arrayInsert(struct ls_Array* self, void* x);
-extern void* ls_arrayErase(struct ls_Array* self, int index);
-extern void* ls_arrayGet(struct ls_Array* self, int index);
-extern void ls_arraySet(struct ls_Array* self, int index, void* x);
-
-extern int ls_arrayForeach(struct ls_Array* self, void (*visitor)(void*, void*), void* arg);
-
-#endif  /* __LS_ARRAY_HEADER_H__ */
+#endif  /* LITESPHINX_ARRARY_INCLUDED_H */
