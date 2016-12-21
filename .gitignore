@@ -1,11 +1,15 @@
 *.swp
+*.out
 *.o
 *.a
 *.so
+*.exe
 *.obj
 *.lib
 *.dll
-*.exe
 *.ilk
+*.idb
 *.exp
 *.manifest
+*.pyc
+*.pyo
