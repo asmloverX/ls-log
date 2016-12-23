@@ -44,20 +44,6 @@ enum ls_display_t {
   DISPLAY_COUNT,
 };
 
-/*!
- *! @enum LS_DisplayType
- *! @brief display type of log information
- */
-enum LS_DisplayType {
-  Display_Console   = 0, /*!< display log information to console window            */
-  Display_GUI       = 1, /*!< display log information to gui debug window          */
-  Display_File      = 2, /*!< display log information to files                     */
-  Display_Database  = 3, /*!< display log information to databases                 */
-  Display_Network   = 4, /*!< display log information to other terminal by network */
-
-  Display_Count     = 5,
-};
-
 enum ls_severity_t {
   /* 日志信息的类型 */
   SEVERITY_DEBUG  = 0,
@@ -68,29 +54,8 @@ enum ls_severity_t {
   SEVERITY_COUNT,
 };
 
-/*!
- *! @enum LS_SeverityType
- *! @brief severity type of log information
- */
-enum LS_SeverityType {
-  Severity_Debug    = 0, /*!< debug informations   */
-  Severity_Message  = 1, /*!< normal messages      */
-  Severity_Warning  = 2, /*!< warning informations */
-  Severity_Error    = 3, /*!< error informations   */
-
-  Severity_Count    = 4,
-};
-
 extern int ls_log_init(void);
 extern void ls_log_destroy(void);
-
-/*!
- *! Usage:
- *!   ls_init - 在系统启动的时候初始化执行一些操作, 加载对应的资源
- *!   ls_uninit - 在系统退出之前用来回收资源
- */
-extern int ls_init(void);     /*!< initiliaze logging system   */
-extern void ls_uninit(void);  /*!< uninitialize logging system */
 
 /*!
  *! 记录日志信息的操作接口, 使用方式类似printf系列的函数

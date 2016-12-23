@@ -39,11 +39,15 @@
 # error "Unsupport unknown platform !!!"
 #endif
 
+#if !defined(LS_WINDOWS)
+# define LS_POSIX
+#endif
+
 #define UNUSED_PARAM(arg) (void)arg
 #define countof(x)        (sizeof((x)) / sizeof(*(x)))
 
-#define LS_ERROR_LEN      (-1)    /*!< error length return   */
-#define LS_BUFFERLEN_DEF  (1024)  /*!< default buffer length */
+#define LS_ERROR_LEN      (-1)    /* error length return */
+#define LS_BUFFERLEN_DEF  (1024)  /* default buffer length */
 
 typedef enum ls_boolean_t {
   False = 0,
@@ -62,18 +66,4 @@ enum ls_error_t {
   LS_ECWRITELOG     = 6,  /* error - create object `ls_write_log_t` failed */
 };
 
-/*!
- *! @enum LS_ResultType
- *! @brief Result type
- */
-enum LS_ResultType {
-  LS_Success                    = 0, /*!< success                               */
-  LS_Failed                     = 1, /*!< failed                                */
-  LS_Failed_InvalidParameters   = 2, /*!< failed - invalid parameters           */
-  LS_Failed_LoadConfig          = 3, /*!< failed - load configure failed        */
-  LS_Failed_CreateSeverityArray = 4, /*!< failed - create severity array failed */
-  LS_Failed_CreateModulesArray  = 5, /*!< failed - create modules array failed  */
-  LS_Failed_CreateWriteLog      = 6, /*!< failed - create ls_WriteLog failed    */
-};
-
-#endif  /* LITESPHINX_COMMON_INCLUDED_H */
+#endif /* LITESPHINX_COMMON_INCLUDED_H */
